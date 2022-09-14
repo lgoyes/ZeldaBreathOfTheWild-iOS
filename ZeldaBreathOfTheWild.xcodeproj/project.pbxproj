@@ -11,9 +11,18 @@
 		797CB2C728D154E60055D398 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB2C628D154E60055D398 /* ContentView.swift */; };
 		797CB2C928D154E80055D398 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 797CB2C828D154E80055D398 /* Assets.xcassets */; };
 		797CB2CC28D154E80055D398 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 797CB2CB28D154E80055D398 /* Preview Assets.xcassets */; };
-		797CB2D628D154E80055D398 /* ZeldaBreathOfTheWildTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB2D528D154E80055D398 /* ZeldaBreathOfTheWildTests.swift */; };
 		797CB2E028D154E80055D398 /* ZeldaBreathOfTheWildUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB2DF28D154E80055D398 /* ZeldaBreathOfTheWildUITests.swift */; };
-		797CB2E228D154E80055D398 /* ZeldaBreathOfTheWildUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB2E128D154E80055D398 /* ZeldaBreathOfTheWildUITestsLaunchTests.swift */; };
+		797CB2F828D159060055D398 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB2F728D159060055D398 /* MockURLProtocol.swift */; };
+		797CB2FC28D15B040055D398 /* WebClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB2FB28D15B040055D398 /* WebClientProtocol.swift */; };
+		797CB2FE28D15B530055D398 /* RESTClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB2FD28D15B530055D398 /* RESTClient.swift */; };
+		797CB30328D15FA30055D398 /* RESTClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB30228D15FA30055D398 /* RESTClientTests.swift */; };
+		797CB30528D165DE0055D398 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB30428D165DE0055D398 /* Endpoint.swift */; };
+		797CB30B28D167F10055D398 /* CategoryItemsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB30A28D167F10055D398 /* CategoryItemsService.swift */; };
+		797CB30D28D16AB40055D398 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB30C28D16AB40055D398 /* ServiceError.swift */; };
+		797CB30F28D16B190055D398 /* APICategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB30E28D16B190055D398 /* APICategory.swift */; };
+		797CB31128D16B280055D398 /* APICategoryItemsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB31028D16B280055D398 /* APICategoryItemsResponse.swift */; };
+		797CB31328D16C4A0055D398 /* DataConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB31228D16C4A0055D398 /* DataConstants.swift */; };
+		797CB31728D16CD20055D398 /* CategoryItemsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB31628D16CD20055D398 /* CategoryItemsServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +49,19 @@
 		797CB2C828D154E80055D398 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		797CB2CB28D154E80055D398 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		797CB2D128D154E80055D398 /* ZeldaBreathOfTheWildTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeldaBreathOfTheWildTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		797CB2D528D154E80055D398 /* ZeldaBreathOfTheWildTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeldaBreathOfTheWildTests.swift; sourceTree = "<group>"; };
 		797CB2DB28D154E80055D398 /* ZeldaBreathOfTheWildUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeldaBreathOfTheWildUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		797CB2DF28D154E80055D398 /* ZeldaBreathOfTheWildUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeldaBreathOfTheWildUITests.swift; sourceTree = "<group>"; };
-		797CB2E128D154E80055D398 /* ZeldaBreathOfTheWildUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeldaBreathOfTheWildUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		797CB2F728D159060055D398 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		797CB2FB28D15B040055D398 /* WebClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebClientProtocol.swift; sourceTree = "<group>"; };
+		797CB2FD28D15B530055D398 /* RESTClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RESTClient.swift; sourceTree = "<group>"; };
+		797CB30228D15FA30055D398 /* RESTClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RESTClientTests.swift; sourceTree = "<group>"; };
+		797CB30428D165DE0055D398 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		797CB30A28D167F10055D398 /* CategoryItemsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemsService.swift; sourceTree = "<group>"; };
+		797CB30C28D16AB40055D398 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		797CB30E28D16B190055D398 /* APICategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICategory.swift; sourceTree = "<group>"; };
+		797CB31028D16B280055D398 /* APICategoryItemsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICategoryItemsResponse.swift; sourceTree = "<group>"; };
+		797CB31228D16C4A0055D398 /* DataConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataConstants.swift; sourceTree = "<group>"; };
+		797CB31628D16CD20055D398 /* CategoryItemsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemsServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +112,10 @@
 		797CB2C328D154E60055D398 /* ZeldaBreathOfTheWild */ = {
 			isa = PBXGroup;
 			children = (
+				797CB30828D167CE0055D398 /* ItemDetails */,
+				797CB30728D167B70055D398 /* CategoryItems */,
+				797CB30628D1678A0055D398 /* CategorySelection */,
+				797CB2F928D15A9E0055D398 /* Common */,
 				797CB2C428D154E60055D398 /* ZeldaBreathOfTheWildApp.swift */,
 				797CB2C628D154E60055D398 /* ContentView.swift */,
 				797CB2C828D154E80055D398 /* Assets.xcassets */,
@@ -113,7 +135,8 @@
 		797CB2D428D154E80055D398 /* ZeldaBreathOfTheWildTests */ = {
 			isa = PBXGroup;
 			children = (
-				797CB2D528D154E80055D398 /* ZeldaBreathOfTheWildTests.swift */,
+				797CB31428D16CBC0055D398 /* CategoryItems */,
+				797CB2FF28D15F530055D398 /* Common */,
 			);
 			path = ZeldaBreathOfTheWildTests;
 			sourceTree = "<group>";
@@ -122,9 +145,101 @@
 			isa = PBXGroup;
 			children = (
 				797CB2DF28D154E80055D398 /* ZeldaBreathOfTheWildUITests.swift */,
-				797CB2E128D154E80055D398 /* ZeldaBreathOfTheWildUITestsLaunchTests.swift */,
 			);
 			path = ZeldaBreathOfTheWildUITests;
+			sourceTree = "<group>";
+		};
+		797CB2EE28D1563F0055D398 /* WebRequestDoubles */ = {
+			isa = PBXGroup;
+			children = (
+				797CB2F728D159060055D398 /* MockURLProtocol.swift */,
+			);
+			path = WebRequestDoubles;
+			sourceTree = "<group>";
+		};
+		797CB2F928D15A9E0055D398 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				797CB2FA28D15AA30055D398 /* Data */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		797CB2FA28D15AA30055D398 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				797CB2FB28D15B040055D398 /* WebClientProtocol.swift */,
+				797CB2FD28D15B530055D398 /* RESTClient.swift */,
+				797CB30428D165DE0055D398 /* Endpoint.swift */,
+				797CB30C28D16AB40055D398 /* ServiceError.swift */,
+				797CB31228D16C4A0055D398 /* DataConstants.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		797CB2FF28D15F530055D398 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				797CB30028D15F570055D398 /* Data */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		797CB30028D15F570055D398 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				797CB2EE28D1563F0055D398 /* WebRequestDoubles */,
+				797CB30228D15FA30055D398 /* RESTClientTests.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		797CB30628D1678A0055D398 /* CategorySelection */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CategorySelection;
+			sourceTree = "<group>";
+		};
+		797CB30728D167B70055D398 /* CategoryItems */ = {
+			isa = PBXGroup;
+			children = (
+				797CB30928D167D50055D398 /* Data */,
+			);
+			path = CategoryItems;
+			sourceTree = "<group>";
+		};
+		797CB30828D167CE0055D398 /* ItemDetails */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ItemDetails;
+			sourceTree = "<group>";
+		};
+		797CB30928D167D50055D398 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				797CB30A28D167F10055D398 /* CategoryItemsService.swift */,
+				797CB30E28D16B190055D398 /* APICategory.swift */,
+				797CB31028D16B280055D398 /* APICategoryItemsResponse.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		797CB31428D16CBC0055D398 /* CategoryItems */ = {
+			isa = PBXGroup;
+			children = (
+				797CB31528D16CC10055D398 /* Data */,
+			);
+			path = CategoryItems;
+			sourceTree = "<group>";
+		};
+		797CB31528D16CC10055D398 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				797CB31628D16CD20055D398 /* CategoryItemsServiceTests.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +372,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				797CB2FE28D15B530055D398 /* RESTClient.swift in Sources */,
+				797CB30528D165DE0055D398 /* Endpoint.swift in Sources */,
+				797CB2FC28D15B040055D398 /* WebClientProtocol.swift in Sources */,
 				797CB2C728D154E60055D398 /* ContentView.swift in Sources */,
+				797CB30F28D16B190055D398 /* APICategory.swift in Sources */,
+				797CB31328D16C4A0055D398 /* DataConstants.swift in Sources */,
+				797CB31128D16B280055D398 /* APICategoryItemsResponse.swift in Sources */,
+				797CB30B28D167F10055D398 /* CategoryItemsService.swift in Sources */,
+				797CB30D28D16AB40055D398 /* ServiceError.swift in Sources */,
 				797CB2C528D154E60055D398 /* ZeldaBreathOfTheWildApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +389,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				797CB2D628D154E80055D398 /* ZeldaBreathOfTheWildTests.swift in Sources */,
+				797CB30328D15FA30055D398 /* RESTClientTests.swift in Sources */,
+				797CB31728D16CD20055D398 /* CategoryItemsServiceTests.swift in Sources */,
+				797CB2F828D159060055D398 /* MockURLProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +399,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				797CB2E228D154E80055D398 /* ZeldaBreathOfTheWildUITestsLaunchTests.swift in Sources */,
 				797CB2E028D154E80055D398 /* ZeldaBreathOfTheWildUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
