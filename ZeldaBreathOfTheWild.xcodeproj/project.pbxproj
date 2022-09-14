@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		797CB2C528D154E60055D398 /* ZeldaBreathOfTheWildApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB2C428D154E60055D398 /* ZeldaBreathOfTheWildApp.swift */; };
+		797CB2C728D154E60055D398 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB2C628D154E60055D398 /* ContentView.swift */; };
+		797CB2C928D154E80055D398 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 797CB2C828D154E80055D398 /* Assets.xcassets */; };
+		797CB2CC28D154E80055D398 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 797CB2CB28D154E80055D398 /* Preview Assets.xcassets */; };
+		797CB2D628D154E80055D398 /* ZeldaBreathOfTheWildTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB2D528D154E80055D398 /* ZeldaBreathOfTheWildTests.swift */; };
+		797CB2E028D154E80055D398 /* ZeldaBreathOfTheWildUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB2DF28D154E80055D398 /* ZeldaBreathOfTheWildUITests.swift */; };
+		797CB2E228D154E80055D398 /* ZeldaBreathOfTheWildUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB2E128D154E80055D398 /* ZeldaBreathOfTheWildUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		797CB2D228D154E80055D398 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 797CB2B928D154E60055D398 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 797CB2C028D154E60055D398;
+			remoteInfo = ZeldaBreathOfTheWild;
+		};
+		797CB2DC28D154E80055D398 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 797CB2B928D154E60055D398 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 797CB2C028D154E60055D398;
+			remoteInfo = ZeldaBreathOfTheWild;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		797CB2C128D154E60055D398 /* ZeldaBreathOfTheWild.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZeldaBreathOfTheWild.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		797CB2C428D154E60055D398 /* ZeldaBreathOfTheWildApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeldaBreathOfTheWildApp.swift; sourceTree = "<group>"; };
+		797CB2C628D154E60055D398 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		797CB2C828D154E80055D398 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		797CB2CB28D154E80055D398 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		797CB2D128D154E80055D398 /* ZeldaBreathOfTheWildTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeldaBreathOfTheWildTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		797CB2D528D154E80055D398 /* ZeldaBreathOfTheWildTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeldaBreathOfTheWildTests.swift; sourceTree = "<group>"; };
+		797CB2DB28D154E80055D398 /* ZeldaBreathOfTheWildUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeldaBreathOfTheWildUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		797CB2DF28D154E80055D398 /* ZeldaBreathOfTheWildUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeldaBreathOfTheWildUITests.swift; sourceTree = "<group>"; };
+		797CB2E128D154E80055D398 /* ZeldaBreathOfTheWildUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeldaBreathOfTheWildUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		797CB2BE28D154E60055D398 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		797CB2CE28D154E80055D398 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		797CB2D828D154E80055D398 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		797CB2B828D154E60055D398 = {
+			isa = PBXGroup;
+			children = (
+				797CB2C328D154E60055D398 /* ZeldaBreathOfTheWild */,
+				797CB2D428D154E80055D398 /* ZeldaBreathOfTheWildTests */,
+				797CB2DE28D154E80055D398 /* ZeldaBreathOfTheWildUITests */,
+				797CB2C228D154E60055D398 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		797CB2C228D154E60055D398 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				797CB2C128D154E60055D398 /* ZeldaBreathOfTheWild.app */,
+				797CB2D128D154E80055D398 /* ZeldaBreathOfTheWildTests.xctest */,
+				797CB2DB28D154E80055D398 /* ZeldaBreathOfTheWildUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		797CB2C328D154E60055D398 /* ZeldaBreathOfTheWild */ = {
+			isa = PBXGroup;
+			children = (
+				797CB2C428D154E60055D398 /* ZeldaBreathOfTheWildApp.swift */,
+				797CB2C628D154E60055D398 /* ContentView.swift */,
+				797CB2C828D154E80055D398 /* Assets.xcassets */,
+				797CB2CA28D154E80055D398 /* Preview Content */,
+			);
+			path = ZeldaBreathOfTheWild;
+			sourceTree = "<group>";
+		};
+		797CB2CA28D154E80055D398 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				797CB2CB28D154E80055D398 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		797CB2D428D154E80055D398 /* ZeldaBreathOfTheWildTests */ = {
+			isa = PBXGroup;
+			children = (
+				797CB2D528D154E80055D398 /* ZeldaBreathOfTheWildTests.swift */,
+			);
+			path = ZeldaBreathOfTheWildTests;
+			sourceTree = "<group>";
+		};
+		797CB2DE28D154E80055D398 /* ZeldaBreathOfTheWildUITests */ = {
+			isa = PBXGroup;
+			children = (
+				797CB2DF28D154E80055D398 /* ZeldaBreathOfTheWildUITests.swift */,
+				797CB2E128D154E80055D398 /* ZeldaBreathOfTheWildUITestsLaunchTests.swift */,
+			);
+			path = ZeldaBreathOfTheWildUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		797CB2C028D154E60055D398 /* ZeldaBreathOfTheWild */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 797CB2E528D154E80055D398 /* Build configuration list for PBXNativeTarget "ZeldaBreathOfTheWild" */;
+			buildPhases = (
+				797CB2BD28D154E60055D398 /* Sources */,
+				797CB2BE28D154E60055D398 /* Frameworks */,
+				797CB2BF28D154E60055D398 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZeldaBreathOfTheWild;
+			productName = ZeldaBreathOfTheWild;
+			productReference = 797CB2C128D154E60055D398 /* ZeldaBreathOfTheWild.app */;
+			productType = "com.apple.product-type.application";
+		};
+		797CB2D028D154E80055D398 /* ZeldaBreathOfTheWildTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 797CB2E828D154E80055D398 /* Build configuration list for PBXNativeTarget "ZeldaBreathOfTheWildTests" */;
+			buildPhases = (
+				797CB2CD28D154E80055D398 /* Sources */,
+				797CB2CE28D154E80055D398 /* Frameworks */,
+				797CB2CF28D154E80055D398 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				797CB2D328D154E80055D398 /* PBXTargetDependency */,
+			);
+			name = ZeldaBreathOfTheWildTests;
+			productName = ZeldaBreathOfTheWildTests;
+			productReference = 797CB2D128D154E80055D398 /* ZeldaBreathOfTheWildTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		797CB2DA28D154E80055D398 /* ZeldaBreathOfTheWildUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 797CB2EB28D154E80055D398 /* Build configuration list for PBXNativeTarget "ZeldaBreathOfTheWildUITests" */;
+			buildPhases = (
+				797CB2D728D154E80055D398 /* Sources */,
+				797CB2D828D154E80055D398 /* Frameworks */,
+				797CB2D928D154E80055D398 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				797CB2DD28D154E80055D398 /* PBXTargetDependency */,
+			);
+			name = ZeldaBreathOfTheWildUITests;
+			productName = ZeldaBreathOfTheWildUITests;
+			productReference = 797CB2DB28D154E80055D398 /* ZeldaBreathOfTheWildUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		797CB2B928D154E60055D398 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					797CB2C028D154E60055D398 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					797CB2D028D154E80055D398 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 797CB2C028D154E60055D398;
+					};
+					797CB2DA28D154E80055D398 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 797CB2C028D154E60055D398;
+					};
+				};
+			};
+			buildConfigurationList = 797CB2BC28D154E60055D398 /* Build configuration list for PBXProject "ZeldaBreathOfTheWild" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 797CB2B828D154E60055D398;
+			productRefGroup = 797CB2C228D154E60055D398 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				797CB2C028D154E60055D398 /* ZeldaBreathOfTheWild */,
+				797CB2D028D154E80055D398 /* ZeldaBreathOfTheWildTests */,
+				797CB2DA28D154E80055D398 /* ZeldaBreathOfTheWildUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		797CB2BF28D154E60055D398 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				797CB2CC28D154E80055D398 /* Preview Assets.xcassets in Resources */,
+				797CB2C928D154E80055D398 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		797CB2CF28D154E80055D398 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		797CB2D928D154E80055D398 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		797CB2BD28D154E60055D398 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				797CB2C728D154E60055D398 /* ContentView.swift in Sources */,
+				797CB2C528D154E60055D398 /* ZeldaBreathOfTheWildApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		797CB2CD28D154E80055D398 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				797CB2D628D154E80055D398 /* ZeldaBreathOfTheWildTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		797CB2D728D154E80055D398 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				797CB2E228D154E80055D398 /* ZeldaBreathOfTheWildUITestsLaunchTests.swift in Sources */,
+				797CB2E028D154E80055D398 /* ZeldaBreathOfTheWildUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		797CB2D328D154E80055D398 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 797CB2C028D154E60055D398 /* ZeldaBreathOfTheWild */;
+			targetProxy = 797CB2D228D154E80055D398 /* PBXContainerItemProxy */;
+		};
+		797CB2DD28D154E80055D398 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 797CB2C028D154E60055D398 /* ZeldaBreathOfTheWild */;
+			targetProxy = 797CB2DC28D154E80055D398 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		797CB2E328D154E80055D398 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		797CB2E428D154E80055D398 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		797CB2E628D154E80055D398 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ZeldaBreathOfTheWild/Preview Content\"";
+				DEVELOPMENT_TEAM = MK9YMN35J9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.luisdavidgoyes.ZeldaBreathOfTheWild;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		797CB2E728D154E80055D398 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ZeldaBreathOfTheWild/Preview Content\"";
+				DEVELOPMENT_TEAM = MK9YMN35J9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.luisdavidgoyes.ZeldaBreathOfTheWild;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		797CB2E928D154E80055D398 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MK9YMN35J9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.luisdavidgoyes.ZeldaBreathOfTheWildTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZeldaBreathOfTheWild.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ZeldaBreathOfTheWild";
+			};
+			name = Debug;
+		};
+		797CB2EA28D154E80055D398 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MK9YMN35J9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.luisdavidgoyes.ZeldaBreathOfTheWildTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZeldaBreathOfTheWild.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ZeldaBreathOfTheWild";
+			};
+			name = Release;
+		};
+		797CB2EC28D154E80055D398 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MK9YMN35J9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.luisdavidgoyes.ZeldaBreathOfTheWildUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZeldaBreathOfTheWild;
+			};
+			name = Debug;
+		};
+		797CB2ED28D154E80055D398 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MK9YMN35J9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.luisdavidgoyes.ZeldaBreathOfTheWildUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZeldaBreathOfTheWild;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		797CB2BC28D154E60055D398 /* Build configuration list for PBXProject "ZeldaBreathOfTheWild" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				797CB2E328D154E80055D398 /* Debug */,
+				797CB2E428D154E80055D398 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		797CB2E528D154E80055D398 /* Build configuration list for PBXNativeTarget "ZeldaBreathOfTheWild" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				797CB2E628D154E80055D398 /* Debug */,
+				797CB2E728D154E80055D398 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		797CB2E828D154E80055D398 /* Build configuration list for PBXNativeTarget "ZeldaBreathOfTheWildTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				797CB2E928D154E80055D398 /* Debug */,
+				797CB2EA28D154E80055D398 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		797CB2EB28D154E80055D398 /* Build configuration list for PBXNativeTarget "ZeldaBreathOfTheWildUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				797CB2EC28D154E80055D398 /* Debug */,
+				797CB2ED28D154E80055D398 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 797CB2B928D154E60055D398 /* Project object */;
+}
