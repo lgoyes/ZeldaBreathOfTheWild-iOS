@@ -7,8 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7915FB0628D3BF80009CBE0B /* ItemDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7915FB0528D3BF80009CBE0B /* ItemDetailsView.swift */; };
+		7915FB0928D3C0AE009CBE0B /* CategoryItemsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7915FB0828D3C0AE009CBE0B /* CategoryItemsListView.swift */; };
+		7915FB0B28D3C10F009CBE0B /* CategorySelectionViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7915FB0A28D3C10F009CBE0B /* CategorySelectionViewBuilder.swift */; };
+		7915FB0E28D3C142009CBE0B /* ViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7915FB0D28D3C142009CBE0B /* ViewBuilder.swift */; };
+		7915FB1028D3C280009CBE0B /* CategoryButtonInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7915FB0F28D3C280009CBE0B /* CategoryButtonInfo.swift */; };
+		7915FB1228D3C438009CBE0B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7915FB1128D3C438009CBE0B /* ContentView.swift */; };
+		791BBEDF28D26C8200B3B7D5 /* APIFoodItemFoodItemMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791BBEDE28D26C8200B3B7D5 /* APIFoodItemFoodItemMapperTests.swift */; };
+		791BBEE128D26EC200B3B7D5 /* APINonFoodItemNonFoodItemMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791BBEE028D26EC200B3B7D5 /* APINonFoodItemNonFoodItemMapperTests.swift */; };
+		791BBEE328D2701F00B3B7D5 /* CategoryAPICategoryMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791BBEE228D2701F00B3B7D5 /* CategoryAPICategoryMapperTests.swift */; };
 		797CB2C528D154E60055D398 /* ZeldaBreathOfTheWildApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB2C428D154E60055D398 /* ZeldaBreathOfTheWildApp.swift */; };
-		797CB2C728D154E60055D398 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB2C628D154E60055D398 /* ContentView.swift */; };
 		797CB2C928D154E80055D398 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 797CB2C828D154E80055D398 /* Assets.xcassets */; };
 		797CB2CC28D154E80055D398 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 797CB2CB28D154E80055D398 /* Preview Assets.xcassets */; };
 		797CB2E028D154E80055D398 /* ZeldaBreathOfTheWildUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB2DF28D154E80055D398 /* ZeldaBreathOfTheWildUITests.swift */; };
@@ -23,6 +31,17 @@
 		797CB31128D16B280055D398 /* APICategoryItemsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB31028D16B280055D398 /* APICategoryItemsResponse.swift */; };
 		797CB31328D16C4A0055D398 /* DataConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB31228D16C4A0055D398 /* DataConstants.swift */; };
 		797CB31728D16CD20055D398 /* CategoryItemsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB31628D16CD20055D398 /* CategoryItemsServiceTests.swift */; };
+		797E0A9928D3AE4300F9EE1F /* APIFoodItemBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797E0A9828D3AE4300F9EE1F /* APIFoodItemBuilder.swift */; };
+		797E0A9B28D3AEB300F9EE1F /* APINonFoodItemBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797E0A9A28D3AEB300F9EE1F /* APINonFoodItemBuilder.swift */; };
+		797E0A9D28D3AF5F00F9EE1F /* DefaultAPICategoryItemsResponseCategoryItemsMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797E0A9C28D3AF5F00F9EE1F /* DefaultAPICategoryItemsResponseCategoryItemsMapperTests.swift */; };
+		797E0AA028D3B8FE00F9EE1F /* CategorySelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797E0A9F28D3B8FE00F9EE1F /* CategorySelectionView.swift */; };
+		79CBD92B28D25DE9001E4D92 /* FakeWebClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CBD92A28D25DE9001E4D92 /* FakeWebClient.swift */; };
+		79CBD92E28D262B3001E4D92 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CBD92D28D262B3001E4D92 /* Category.swift */; };
+		79CBD93028D262E2001E4D92 /* CategoryItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CBD92F28D262E2001E4D92 /* CategoryItems.swift */; };
+		79CBD93228D263B2001E4D92 /* CategoryAPICategoryMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CBD93128D263B2001E4D92 /* CategoryAPICategoryMapper.swift */; };
+		79CBD93428D2643D001E4D92 /* MapperError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CBD93328D2643D001E4D92 /* MapperError.swift */; };
+		79CBD93628D2656A001E4D92 /* APICategoryItemsResponseCategoryItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CBD93528D2656A001E4D92 /* APICategoryItemsResponseCategoryItemsMapper.swift */; };
+		79CBD93828D26899001E4D92 /* EndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CBD93728D26899001E4D92 /* EndpointTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,9 +62,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7915FB0528D3BF80009CBE0B /* ItemDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsView.swift; sourceTree = "<group>"; };
+		7915FB0828D3C0AE009CBE0B /* CategoryItemsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemsListView.swift; sourceTree = "<group>"; };
+		7915FB0A28D3C10F009CBE0B /* CategorySelectionViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySelectionViewBuilder.swift; sourceTree = "<group>"; };
+		7915FB0D28D3C142009CBE0B /* ViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilder.swift; sourceTree = "<group>"; };
+		7915FB0F28D3C280009CBE0B /* CategoryButtonInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryButtonInfo.swift; sourceTree = "<group>"; };
+		7915FB1128D3C438009CBE0B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		791BBEDE28D26C8200B3B7D5 /* APIFoodItemFoodItemMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFoodItemFoodItemMapperTests.swift; sourceTree = "<group>"; };
+		791BBEE028D26EC200B3B7D5 /* APINonFoodItemNonFoodItemMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APINonFoodItemNonFoodItemMapperTests.swift; sourceTree = "<group>"; };
+		791BBEE228D2701F00B3B7D5 /* CategoryAPICategoryMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryAPICategoryMapperTests.swift; sourceTree = "<group>"; };
 		797CB2C128D154E60055D398 /* ZeldaBreathOfTheWild.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZeldaBreathOfTheWild.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		797CB2C428D154E60055D398 /* ZeldaBreathOfTheWildApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeldaBreathOfTheWildApp.swift; sourceTree = "<group>"; };
-		797CB2C628D154E60055D398 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		797CB2C828D154E80055D398 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		797CB2CB28D154E80055D398 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		797CB2D128D154E80055D398 /* ZeldaBreathOfTheWildTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeldaBreathOfTheWildTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +89,17 @@
 		797CB31028D16B280055D398 /* APICategoryItemsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICategoryItemsResponse.swift; sourceTree = "<group>"; };
 		797CB31228D16C4A0055D398 /* DataConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataConstants.swift; sourceTree = "<group>"; };
 		797CB31628D16CD20055D398 /* CategoryItemsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemsServiceTests.swift; sourceTree = "<group>"; };
+		797E0A9828D3AE4300F9EE1F /* APIFoodItemBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFoodItemBuilder.swift; sourceTree = "<group>"; };
+		797E0A9A28D3AEB300F9EE1F /* APINonFoodItemBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APINonFoodItemBuilder.swift; sourceTree = "<group>"; };
+		797E0A9C28D3AF5F00F9EE1F /* DefaultAPICategoryItemsResponseCategoryItemsMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAPICategoryItemsResponseCategoryItemsMapperTests.swift; sourceTree = "<group>"; };
+		797E0A9F28D3B8FE00F9EE1F /* CategorySelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySelectionView.swift; sourceTree = "<group>"; };
+		79CBD92A28D25DE9001E4D92 /* FakeWebClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeWebClient.swift; sourceTree = "<group>"; };
+		79CBD92D28D262B3001E4D92 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		79CBD92F28D262E2001E4D92 /* CategoryItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItems.swift; sourceTree = "<group>"; };
+		79CBD93128D263B2001E4D92 /* CategoryAPICategoryMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryAPICategoryMapper.swift; sourceTree = "<group>"; };
+		79CBD93328D2643D001E4D92 /* MapperError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapperError.swift; sourceTree = "<group>"; };
+		79CBD93528D2656A001E4D92 /* APICategoryItemsResponseCategoryItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICategoryItemsResponseCategoryItemsMapper.swift; sourceTree = "<group>"; };
+		79CBD93728D26899001E4D92 /* EndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +127,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7915FB0428D3BF72009CBE0B /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				7915FB0528D3BF80009CBE0B /* ItemDetailsView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		7915FB0728D3C08F009CBE0B /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				7915FB0828D3C0AE009CBE0B /* CategoryItemsListView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		7915FB0C28D3C135009CBE0B /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				7915FB0D28D3C142009CBE0B /* ViewBuilder.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
 		797CB2B828D154E60055D398 = {
 			isa = PBXGroup;
 			children = (
@@ -113,11 +175,11 @@
 			isa = PBXGroup;
 			children = (
 				797CB30828D167CE0055D398 /* ItemDetails */,
-				797CB30728D167B70055D398 /* CategoryItems */,
+				797CB30728D167B70055D398 /* CategoryItemsList */,
 				797CB30628D1678A0055D398 /* CategorySelection */,
 				797CB2F928D15A9E0055D398 /* Common */,
 				797CB2C428D154E60055D398 /* ZeldaBreathOfTheWildApp.swift */,
-				797CB2C628D154E60055D398 /* ContentView.swift */,
+				7915FB1128D3C438009CBE0B /* ContentView.swift */,
 				797CB2C828D154E80055D398 /* Assets.xcassets */,
 				797CB2CA28D154E80055D398 /* Preview Content */,
 			);
@@ -160,6 +222,7 @@
 		797CB2F928D15A9E0055D398 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				7915FB0C28D3C135009CBE0B /* Presentation */,
 				797CB2FA28D15AA30055D398 /* Data */,
 			);
 			path = Common;
@@ -173,6 +236,7 @@
 				797CB30428D165DE0055D398 /* Endpoint.swift */,
 				797CB30C28D16AB40055D398 /* ServiceError.swift */,
 				797CB31228D16C4A0055D398 /* DataConstants.swift */,
+				79CBD93328D2643D001E4D92 /* MapperError.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -190,6 +254,8 @@
 			children = (
 				797CB2EE28D1563F0055D398 /* WebRequestDoubles */,
 				797CB30228D15FA30055D398 /* RESTClientTests.swift */,
+				79CBD92A28D25DE9001E4D92 /* FakeWebClient.swift */,
+				79CBD93728D26899001E4D92 /* EndpointTests.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -197,21 +263,25 @@
 		797CB30628D1678A0055D398 /* CategorySelection */ = {
 			isa = PBXGroup;
 			children = (
+				797E0A9E28D3B8EE00F9EE1F /* Presentation */,
 			);
 			path = CategorySelection;
 			sourceTree = "<group>";
 		};
-		797CB30728D167B70055D398 /* CategoryItems */ = {
+		797CB30728D167B70055D398 /* CategoryItemsList */ = {
 			isa = PBXGroup;
 			children = (
+				7915FB0728D3C08F009CBE0B /* Presentation */,
+				79CBD92C28D26296001E4D92 /* Domain */,
 				797CB30928D167D50055D398 /* Data */,
 			);
-			path = CategoryItems;
+			path = CategoryItemsList;
 			sourceTree = "<group>";
 		};
 		797CB30828D167CE0055D398 /* ItemDetails */ = {
 			isa = PBXGroup;
 			children = (
+				7915FB0428D3BF72009CBE0B /* Presentation */,
 			);
 			path = ItemDetails;
 			sourceTree = "<group>";
@@ -222,6 +292,8 @@
 				797CB30A28D167F10055D398 /* CategoryItemsService.swift */,
 				797CB30E28D16B190055D398 /* APICategory.swift */,
 				797CB31028D16B280055D398 /* APICategoryItemsResponse.swift */,
+				79CBD93128D263B2001E4D92 /* CategoryAPICategoryMapper.swift */,
+				79CBD93528D2656A001E4D92 /* APICategoryItemsResponseCategoryItemsMapper.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -238,8 +310,33 @@
 			isa = PBXGroup;
 			children = (
 				797CB31628D16CD20055D398 /* CategoryItemsServiceTests.swift */,
+				791BBEDE28D26C8200B3B7D5 /* APIFoodItemFoodItemMapperTests.swift */,
+				791BBEE028D26EC200B3B7D5 /* APINonFoodItemNonFoodItemMapperTests.swift */,
+				791BBEE228D2701F00B3B7D5 /* CategoryAPICategoryMapperTests.swift */,
+				797E0A9828D3AE4300F9EE1F /* APIFoodItemBuilder.swift */,
+				797E0A9A28D3AEB300F9EE1F /* APINonFoodItemBuilder.swift */,
+				797E0A9C28D3AF5F00F9EE1F /* DefaultAPICategoryItemsResponseCategoryItemsMapperTests.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		797E0A9E28D3B8EE00F9EE1F /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				7915FB0A28D3C10F009CBE0B /* CategorySelectionViewBuilder.swift */,
+				797E0A9F28D3B8FE00F9EE1F /* CategorySelectionView.swift */,
+				7915FB0F28D3C280009CBE0B /* CategoryButtonInfo.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		79CBD92C28D26296001E4D92 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				79CBD92D28D262B3001E4D92 /* Category.swift */,
+				79CBD92F28D262E2001E4D92 /* CategoryItems.swift */,
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,14 +471,25 @@
 			files = (
 				797CB2FE28D15B530055D398 /* RESTClient.swift in Sources */,
 				797CB30528D165DE0055D398 /* Endpoint.swift in Sources */,
+				7915FB1228D3C438009CBE0B /* ContentView.swift in Sources */,
 				797CB2FC28D15B040055D398 /* WebClientProtocol.swift in Sources */,
-				797CB2C728D154E60055D398 /* ContentView.swift in Sources */,
+				7915FB0928D3C0AE009CBE0B /* CategoryItemsListView.swift in Sources */,
 				797CB30F28D16B190055D398 /* APICategory.swift in Sources */,
+				7915FB0B28D3C10F009CBE0B /* CategorySelectionViewBuilder.swift in Sources */,
+				797E0AA028D3B8FE00F9EE1F /* CategorySelectionView.swift in Sources */,
+				79CBD93428D2643D001E4D92 /* MapperError.swift in Sources */,
+				7915FB0628D3BF80009CBE0B /* ItemDetailsView.swift in Sources */,
 				797CB31328D16C4A0055D398 /* DataConstants.swift in Sources */,
+				79CBD93028D262E2001E4D92 /* CategoryItems.swift in Sources */,
+				79CBD93228D263B2001E4D92 /* CategoryAPICategoryMapper.swift in Sources */,
 				797CB31128D16B280055D398 /* APICategoryItemsResponse.swift in Sources */,
+				7915FB1028D3C280009CBE0B /* CategoryButtonInfo.swift in Sources */,
 				797CB30B28D167F10055D398 /* CategoryItemsService.swift in Sources */,
 				797CB30D28D16AB40055D398 /* ServiceError.swift in Sources */,
 				797CB2C528D154E60055D398 /* ZeldaBreathOfTheWildApp.swift in Sources */,
+				79CBD93628D2656A001E4D92 /* APICategoryItemsResponseCategoryItemsMapper.swift in Sources */,
+				7915FB0E28D3C142009CBE0B /* ViewBuilder.swift in Sources */,
+				79CBD92E28D262B3001E4D92 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,7 +499,15 @@
 			files = (
 				797CB30328D15FA30055D398 /* RESTClientTests.swift in Sources */,
 				797CB31728D16CD20055D398 /* CategoryItemsServiceTests.swift in Sources */,
+				797E0A9D28D3AF5F00F9EE1F /* DefaultAPICategoryItemsResponseCategoryItemsMapperTests.swift in Sources */,
+				791BBEDF28D26C8200B3B7D5 /* APIFoodItemFoodItemMapperTests.swift in Sources */,
+				791BBEE328D2701F00B3B7D5 /* CategoryAPICategoryMapperTests.swift in Sources */,
+				791BBEE128D26EC200B3B7D5 /* APINonFoodItemNonFoodItemMapperTests.swift in Sources */,
+				797E0A9B28D3AEB300F9EE1F /* APINonFoodItemBuilder.swift in Sources */,
+				79CBD92B28D25DE9001E4D92 /* FakeWebClient.swift in Sources */,
+				79CBD93828D26899001E4D92 /* EndpointTests.swift in Sources */,
 				797CB2F828D159060055D398 /* MockURLProtocol.swift in Sources */,
+				797E0A9928D3AE4300F9EE1F /* APIFoodItemBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

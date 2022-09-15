@@ -2,20 +2,21 @@
 //  ContentView.swift
 //  ZeldaBreathOfTheWild
 //
-//  Created by Luis David Goyes on 13/09/22.
+//  Created by Luis David Goyes on 15/09/22.
 //
 
 import SwiftUI
 
 struct ContentView: View {
+    
+    init() {
+        UILabel.appearance(whenContainedInInstancesOf: [UINavigationBar.self]).adjustsFontSizeToFitWidth = true
+    }
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            CategorySelectionViewBuilder.build()
         }
-        .padding()
     }
 }
 
