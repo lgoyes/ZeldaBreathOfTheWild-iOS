@@ -16,6 +16,9 @@
 		791BBEDF28D26C8200B3B7D5 /* APIFoodItemFoodItemMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791BBEDE28D26C8200B3B7D5 /* APIFoodItemFoodItemMapperTests.swift */; };
 		791BBEE128D26EC200B3B7D5 /* APINonFoodItemNonFoodItemMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791BBEE028D26EC200B3B7D5 /* APINonFoodItemNonFoodItemMapperTests.swift */; };
 		791BBEE328D2701F00B3B7D5 /* CategoryAPICategoryMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791BBEE228D2701F00B3B7D5 /* CategoryAPICategoryMapperTests.swift */; };
+		7927C42028D5709D00ED3044 /* Color+hexaInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7927C41F28D5709D00ED3044 /* Color+hexaInit.swift */; };
+		7927C42228D57E6000ED3044 /* CategoryTitleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7927C42128D57E6000ED3044 /* CategoryTitleRepository.swift */; };
+		7927C42428D57ED600ED3044 /* GetTitleForCategoryUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7927C42328D57ED600ED3044 /* GetTitleForCategoryUseCase.swift */; };
 		797CB2C528D154E60055D398 /* ZeldaBreathOfTheWildApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB2C428D154E60055D398 /* ZeldaBreathOfTheWildApp.swift */; };
 		797CB2C928D154E80055D398 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 797CB2C828D154E80055D398 /* Assets.xcassets */; };
 		797CB2CC28D154E80055D398 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 797CB2CB28D154E80055D398 /* Preview Assets.xcassets */; };
@@ -35,6 +38,7 @@
 		797E0A9B28D3AEB300F9EE1F /* APINonFoodItemBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797E0A9A28D3AEB300F9EE1F /* APINonFoodItemBuilder.swift */; };
 		797E0A9D28D3AF5F00F9EE1F /* DefaultAPICategoryItemsResponseCategoryItemsMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797E0A9C28D3AF5F00F9EE1F /* DefaultAPICategoryItemsResponseCategoryItemsMapperTests.swift */; };
 		797E0AA028D3B8FE00F9EE1F /* CategorySelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797E0A9F28D3B8FE00F9EE1F /* CategorySelectionView.swift */; };
+		79B347C228D55EA600AAB300 /* CategoryItemsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B347C128D55EA600AAB300 /* CategoryItemsListViewModel.swift */; };
 		79CBD92B28D25DE9001E4D92 /* FakeWebClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CBD92A28D25DE9001E4D92 /* FakeWebClient.swift */; };
 		79CBD92E28D262B3001E4D92 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CBD92D28D262B3001E4D92 /* Category.swift */; };
 		79CBD93028D262E2001E4D92 /* CategoryItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CBD92F28D262E2001E4D92 /* CategoryItems.swift */; };
@@ -71,6 +75,9 @@
 		791BBEDE28D26C8200B3B7D5 /* APIFoodItemFoodItemMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFoodItemFoodItemMapperTests.swift; sourceTree = "<group>"; };
 		791BBEE028D26EC200B3B7D5 /* APINonFoodItemNonFoodItemMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APINonFoodItemNonFoodItemMapperTests.swift; sourceTree = "<group>"; };
 		791BBEE228D2701F00B3B7D5 /* CategoryAPICategoryMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryAPICategoryMapperTests.swift; sourceTree = "<group>"; };
+		7927C41F28D5709D00ED3044 /* Color+hexaInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+hexaInit.swift"; sourceTree = "<group>"; };
+		7927C42128D57E6000ED3044 /* CategoryTitleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTitleRepository.swift; sourceTree = "<group>"; };
+		7927C42328D57ED600ED3044 /* GetTitleForCategoryUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTitleForCategoryUseCase.swift; sourceTree = "<group>"; };
 		797CB2C128D154E60055D398 /* ZeldaBreathOfTheWild.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZeldaBreathOfTheWild.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		797CB2C428D154E60055D398 /* ZeldaBreathOfTheWildApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeldaBreathOfTheWildApp.swift; sourceTree = "<group>"; };
 		797CB2C828D154E80055D398 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,6 +100,7 @@
 		797E0A9A28D3AEB300F9EE1F /* APINonFoodItemBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APINonFoodItemBuilder.swift; sourceTree = "<group>"; };
 		797E0A9C28D3AF5F00F9EE1F /* DefaultAPICategoryItemsResponseCategoryItemsMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAPICategoryItemsResponseCategoryItemsMapperTests.swift; sourceTree = "<group>"; };
 		797E0A9F28D3B8FE00F9EE1F /* CategorySelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySelectionView.swift; sourceTree = "<group>"; };
+		79B347C128D55EA600AAB300 /* CategoryItemsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemsListViewModel.swift; sourceTree = "<group>"; };
 		79CBD92A28D25DE9001E4D92 /* FakeWebClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeWebClient.swift; sourceTree = "<group>"; };
 		79CBD92D28D262B3001E4D92 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		79CBD92F28D262E2001E4D92 /* CategoryItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItems.swift; sourceTree = "<group>"; };
@@ -139,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				7915FB0828D3C0AE009CBE0B /* CategoryItemsListView.swift */,
+				79B347C128D55EA600AAB300 /* CategoryItemsListViewModel.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -147,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				7915FB0D28D3C142009CBE0B /* ViewBuilder.swift */,
+				7927C41F28D5709D00ED3044 /* Color+hexaInit.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -294,6 +304,7 @@
 				797CB31028D16B280055D398 /* APICategoryItemsResponse.swift */,
 				79CBD93128D263B2001E4D92 /* CategoryAPICategoryMapper.swift */,
 				79CBD93528D2656A001E4D92 /* APICategoryItemsResponseCategoryItemsMapper.swift */,
+				7927C42128D57E6000ED3044 /* CategoryTitleRepository.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -335,6 +346,7 @@
 			children = (
 				79CBD92D28D262B3001E4D92 /* Category.swift */,
 				79CBD92F28D262E2001E4D92 /* CategoryItems.swift */,
+				7927C42328D57ED600ED3044 /* GetTitleForCategoryUseCase.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -469,10 +481,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7927C42228D57E6000ED3044 /* CategoryTitleRepository.swift in Sources */,
+				79B347C228D55EA600AAB300 /* CategoryItemsListViewModel.swift in Sources */,
 				797CB2FE28D15B530055D398 /* RESTClient.swift in Sources */,
 				797CB30528D165DE0055D398 /* Endpoint.swift in Sources */,
 				7915FB1228D3C438009CBE0B /* ContentView.swift in Sources */,
 				797CB2FC28D15B040055D398 /* WebClientProtocol.swift in Sources */,
+				7927C42028D5709D00ED3044 /* Color+hexaInit.swift in Sources */,
 				7915FB0928D3C0AE009CBE0B /* CategoryItemsListView.swift in Sources */,
 				797CB30F28D16B190055D398 /* APICategory.swift in Sources */,
 				7915FB0B28D3C10F009CBE0B /* CategorySelectionViewBuilder.swift in Sources */,
@@ -490,6 +505,7 @@
 				79CBD93628D2656A001E4D92 /* APICategoryItemsResponseCategoryItemsMapper.swift in Sources */,
 				7915FB0E28D3C142009CBE0B /* ViewBuilder.swift in Sources */,
 				79CBD92E28D262B3001E4D92 /* Category.swift in Sources */,
+				7927C42428D57ED600ED3044 /* GetTitleForCategoryUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,11 +7,11 @@
 
 import Foundation
 
-class SomeItem {
+class SomeItem: Identifiable {
     let category: Category
     let id: Int
     let image: String
-    let name: String
+    var name: String
     let description: String
     let commonLocations: [String]
     

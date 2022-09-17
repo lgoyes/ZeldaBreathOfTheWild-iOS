@@ -10,6 +10,5 @@ import SwiftUI
 struct CategoryButtonInfo: Hashable {
     let title: String
     let image: String
-    let color: Color
     let category: Category
 }
