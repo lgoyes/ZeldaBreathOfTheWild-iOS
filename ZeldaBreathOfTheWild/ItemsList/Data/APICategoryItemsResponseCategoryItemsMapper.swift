@@ -28,7 +28,7 @@ struct APIFoodItemFoodItemMapper {
         return FoodItem(
             category: Category(rawValue: input.category)!,
             id: input.id,
-            image: input.image,
+            image: URL(string: input.image),
             name: input.name,
             description: input.description,
             commonLocations: input.commonLocations,
@@ -42,7 +42,7 @@ struct APINonFoodItemNonFoodItemMapper {
         return NonFoodItem(
             category: Category(rawValue: input.category)!,
             id: input.id,
-            image: input.image,
+            image: URL(string: input.image),
             name: input.name,
             description: input.description,
             commonLocations: input.commonLocations,

@@ -8,14 +8,14 @@
 import Foundation
 
 class SomeItem: Identifiable {
-    let category: Category
-    let id: Int
-    let image: String
+    var category: Category
+    var id: Int
+    var image: URL?
     var name: String
-    let description: String
-    let commonLocations: [String]
+    var description: String
+    var commonLocations: [String]
     
-    init(category: Category, id: Int, image: String, name: String, description: String, commonLocations: [String]) {
+    init(category: Category, id: Int, image: URL?, name: String, description: String, commonLocations: [String]) {
         self.category = category
         self.id = id
         self.image = image
@@ -26,9 +26,9 @@ class SomeItem: Identifiable {
 }
 
 class FoodItem: SomeItem {
-    let cookingEffect: String
-    let heartsRecovered: Int
-    init(category: Category, id: Int, image: String, name: String, description: String, commonLocations: [String], cookingEffect: String, heartsRecovered: Int) {
+    var cookingEffect: String
+    var heartsRecovered: Int
+    init(category: Category, id: Int, image: URL?, name: String, description: String, commonLocations: [String], cookingEffect: String, heartsRecovered: Int) {
         self.cookingEffect = cookingEffect
         self.heartsRecovered = heartsRecovered
         super.init(category: category, id: id, image: image, name: name, description: description, commonLocations: commonLocations)
@@ -36,8 +36,8 @@ class FoodItem: SomeItem {
 }
 
 class NonFoodItem: SomeItem {
-    let drops: [String]
-    init(category: Category, id: Int, image: String, name: String, description: String, commonLocations: [String], drops: [String]) {
+    var drops: [String]
+    init(category: Category, id: Int, image: URL?, name: String, description: String, commonLocations: [String], drops: [String]) {
         self.drops = drops
         super.init(category: category, id: id, image: image, name: name, description: description, commonLocations: commonLocations)
     }

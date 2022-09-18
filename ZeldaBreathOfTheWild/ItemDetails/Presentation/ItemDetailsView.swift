@@ -7,77 +7,108 @@
 
 import SwiftUI
 
-struct ItemDetailsView: View {
-    private struct Constant {
-        static let commonLocationsTitle = "Common Locations"
-        static let mainBackgroundColor = Color(hex: 0xfafafa)
-        static let locationsSeparator = ", "
-        static let dividerColor = Color(hex: 0xe1e2e3)
-        static let locationsColor = Color(hex: 0x65686a)
-        static let imageHeight = 160.0
+fileprivate struct ItemDetailsViewConstant {
+    static let commonLocationsTitle = "Common Locations"
+    static let locationsImageName = "map"
+}
+
+fileprivate struct ItemDetailsViewStyle {
+    struct Category {
+        static let font = Font.title3
     }
+    struct ItemImage {
+        static let cornerRadius = 24.0
+        static let verticalPadding = 16.0
+        static let backgroundColor = Color.gray
+        static let sideLength = 160.0
+    }
+    struct Description {
+        static let distanceToDivider = 24.0
+    }
+    struct Divider {
+        static let color = Color(hex: 0xe1e2e3)
+        static let distanceToCommonLocationsTitle = 24.0
+    }
+    struct LocationsTitle {
+        static let font = Font.title2
+        static let fontWeight = Font.Weight.bold
+        static let distanceToLocationsContent = 8.0
+    }
+    struct Locations {
+        static let textColor = Color(hex: 0x65686a)
+        static let font = Font.body
+        static let fontWeight = Font.Weight.light
+    }
+    struct Main {
+        static let backgroundColor = Color(hex: 0xfafafa)
+        static let horizontalPadding = 24.0
+    }
+}
+
+struct ItemDetailsView: View {
+    let viewModel: ItemDetailsViewModel
     
-    let name: String
-    let category: String
-    let description: String
-    let commonLocations: [String]
-    let imageURL: URL?
     var body: some View {
         ScrollView {
             VStack {
-                Text(category)
-                    .font(.title3)
+                Text(viewModel.category)
+                    .font(ItemDetailsViewStyle.Category.font)
                     .frame(maxWidth: .infinity, alignment: .leading)
                 
-                AsyncImage(url: imageURL) { image in
-                    image
-                        .resizable()
+                AsyncImage(url: viewModel.imageURL) { image in
+                    image.resizable()
                         .aspectRatio(contentMode: .fill)
                 } placeholder: {
                     ProgressView()
                 }
-                .frame(maxWidth: .infinity, minHeight: Constant.imageHeight, maxHeight: Constant.imageHeight)
-                .background(Color.gray)
-                .cornerRadius(24)
-                .padding(.vertical, 16)
+                .frame(maxWidth: .infinity, minHeight: ItemDetailsViewStyle.ItemImage.sideLength, maxHeight: ItemDetailsViewStyle.ItemImage.sideLength)
+                .background(ItemDetailsViewStyle.ItemImage.backgroundColor)
+                .cornerRadius(ItemDetailsViewStyle.ItemImage.cornerRadius)
+                .padding(.vertical, ItemDetailsViewStyle.ItemImage.verticalPadding)
                 
-                Text(description)
+                Text(viewModel.description)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .multilineTextAlignment(.leading)
                     .font(.body)
-                    .padding(.bottom, 24)
+                    .padding(.bottom, ItemDetailsViewStyle.Description.distanceToDivider)
                     
                 Divider()
-                    .background(Constant.dividerColor)
-                    .padding(.bottom, 24)
+                    .background(ItemDetailsViewStyle.Divider.color)
+                    .padding(.bottom, ItemDetailsViewStyle.Divider.distanceToCommonLocationsTitle)
                 
-                Text(Constant.commonLocationsTitle)
-                    .font(.title2)
-                    .fontWeight(.bold)
+                Text(ItemDetailsViewConstant.commonLocationsTitle)
+                    .font(ItemDetailsViewStyle.LocationsTitle.font)
+                    .fontWeight(ItemDetailsViewStyle.LocationsTitle.fontWeight)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(.bottom, 8)
+                    .padding(.bottom, ItemDetailsViewStyle.LocationsTitle.distanceToLocationsContent)
                 
                 HStack {
-                    Image(systemName: "map")
-                    Text(commonLocations.joined(separator: Constant.locationsSeparator).uppercased())
-                        .font(.body)
-                        .fontWeight(.light)
+                    Image(systemName: ItemDetailsViewConstant.locationsImageName)
+                    Text(viewModel.commonLocations)
+                        .font(ItemDetailsViewStyle.Locations.font)
+                        .fontWeight(ItemDetailsViewStyle.Locations.fontWeight)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .multilineTextAlignment(.leading)
-                        .foregroundColor(Constant.locationsColor)
+                        .foregroundColor(ItemDetailsViewStyle.Locations.textColor)
                 }
                 
                 Spacer()
             }
-            .padding(.horizontal, 24)
-            .navigationTitle(Text(name))
+            .padding(.horizontal, ItemDetailsViewStyle.Main.horizontalPadding)
+            .navigationTitle(Text(viewModel.name))
         }
-        .background(Constant.mainBackgroundColor)
+        .background(ItemDetailsViewStyle.Main.backgroundColor)
     }
 }
 
 struct ItemDetailsView_Previews: PreviewProvider {
+    static let viewModel = ItemDetailsViewModel(
+        name: "Name",
+        category: "Category",
+        description: "Some description, which is supposed to be large enough to take multiple lines",
+        commonLocations: ["Medellin", "Bogota"],
+        imageURL: URL(string:"https://botw-compendium.herokuapp.com/api/v2/entry/hot-footed_frog/image"))
     static var previews: some View {
-        ItemDetailsView(name: "Name", category: "Category", description: "Some description, which is supposed to be large enough to take multiple lines", commonLocations: ["Medellin", "Bogota"], imageURL: URL(string: "https://botw-compendium.herokuapp.com/api/v2/entry/hot-footed_frog/image"))
+        ItemDetailsView(viewModel: viewModel)
     }
 }

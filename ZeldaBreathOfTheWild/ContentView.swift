@@ -9,13 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     
+    var categoryListViewBuilder: CategoryListViewBuilder
+
     init() {
         UILabel.appearance(whenContainedInInstancesOf: [UINavigationBar.self]).adjustsFontSizeToFitWidth = true
+        
+        categoryListViewBuilder = CategoryListViewBuilder()
     }
     
     var body: some View {
         NavigationView {
-            CategorySelectionViewBuilder.build()
+            categoryListViewBuilder.build()
         }
     }
 }
