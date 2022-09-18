@@ -26,10 +26,10 @@
 		797CB2FE28D15B530055D398 /* RESTClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB2FD28D15B530055D398 /* RESTClient.swift */; };
 		797CB30328D15FA30055D398 /* RESTClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB30228D15FA30055D398 /* RESTClientTests.swift */; };
 		797CB30528D165DE0055D398 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB30428D165DE0055D398 /* Endpoint.swift */; };
-		797CB30B28D167F10055D398 /* CategoryItemsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB30A28D167F10055D398 /* CategoryItemsService.swift */; };
+		797CB30B28D167F10055D398 /* NonConsumableItemsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB30A28D167F10055D398 /* NonConsumableItemsService.swift */; };
 		797CB30D28D16AB40055D398 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB30C28D16AB40055D398 /* ServiceError.swift */; };
 		797CB30F28D16B190055D398 /* APICategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB30E28D16B190055D398 /* APICategory.swift */; };
-		797CB31128D16B280055D398 /* APICategoryItemsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB31028D16B280055D398 /* APICategoryItemsResponse.swift */; };
+		797CB31128D16B280055D398 /* APIConsumableItemsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB31028D16B280055D398 /* APIConsumableItemsResponse.swift */; };
 		797CB31328D16C4A0055D398 /* DataConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB31228D16C4A0055D398 /* DataConstants.swift */; };
 		797CB31728D16CD20055D398 /* CategoryItemsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB31628D16CD20055D398 /* CategoryItemsServiceTests.swift */; };
 		797E0A9928D3AE4300F9EE1F /* APIFoodItemBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797E0A9828D3AE4300F9EE1F /* APIFoodItemBuilder.swift */; };
@@ -38,6 +38,7 @@
 		797E0AA028D3B8FE00F9EE1F /* CategoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797E0A9F28D3B8FE00F9EE1F /* CategoryListView.swift */; };
 		79B347C228D55EA600AAB300 /* ItemListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B347C128D55EA600AAB300 /* ItemListViewModel.swift */; };
 		79B8D9FE28D6927A00A12A70 /* ItemListNextViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B8D9FD28D6927A00A12A70 /* ItemListNextViewBuilder.swift */; };
+		79B8DA0028D69BC900A12A70 /* FetchCategoryItemsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B8D9FF28D69BC900A12A70 /* FetchCategoryItemsUseCase.swift */; };
 		79CBD92B28D25DE9001E4D92 /* FakeWebClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CBD92A28D25DE9001E4D92 /* FakeWebClient.swift */; };
 		79CBD92E28D262B3001E4D92 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CBD92D28D262B3001E4D92 /* Category.swift */; };
 		79CBD93028D262E2001E4D92 /* CategoryItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CBD92F28D262E2001E4D92 /* CategoryItems.swift */; };
@@ -92,10 +93,10 @@
 		797CB2FD28D15B530055D398 /* RESTClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RESTClient.swift; sourceTree = "<group>"; };
 		797CB30228D15FA30055D398 /* RESTClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RESTClientTests.swift; sourceTree = "<group>"; };
 		797CB30428D165DE0055D398 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
-		797CB30A28D167F10055D398 /* CategoryItemsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemsService.swift; sourceTree = "<group>"; };
+		797CB30A28D167F10055D398 /* NonConsumableItemsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonConsumableItemsService.swift; sourceTree = "<group>"; };
 		797CB30C28D16AB40055D398 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
 		797CB30E28D16B190055D398 /* APICategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICategory.swift; sourceTree = "<group>"; };
-		797CB31028D16B280055D398 /* APICategoryItemsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICategoryItemsResponse.swift; sourceTree = "<group>"; };
+		797CB31028D16B280055D398 /* APIConsumableItemsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConsumableItemsResponse.swift; sourceTree = "<group>"; };
 		797CB31228D16C4A0055D398 /* DataConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataConstants.swift; sourceTree = "<group>"; };
 		797CB31628D16CD20055D398 /* CategoryItemsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemsServiceTests.swift; sourceTree = "<group>"; };
 		797E0A9828D3AE4300F9EE1F /* APIFoodItemBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFoodItemBuilder.swift; sourceTree = "<group>"; };
@@ -104,6 +105,7 @@
 		797E0A9F28D3B8FE00F9EE1F /* CategoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListView.swift; sourceTree = "<group>"; };
 		79B347C128D55EA600AAB300 /* ItemListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewModel.swift; sourceTree = "<group>"; };
 		79B8D9FD28D6927A00A12A70 /* ItemListNextViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListNextViewBuilder.swift; sourceTree = "<group>"; };
+		79B8D9FF28D69BC900A12A70 /* FetchCategoryItemsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCategoryItemsUseCase.swift; sourceTree = "<group>"; };
 		79CBD92A28D25DE9001E4D92 /* FakeWebClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeWebClient.swift; sourceTree = "<group>"; };
 		79CBD92D28D262B3001E4D92 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		79CBD92F28D262E2001E4D92 /* CategoryItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItems.swift; sourceTree = "<group>"; };
@@ -313,9 +315,9 @@
 		797CB30928D167D50055D398 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				797CB30A28D167F10055D398 /* CategoryItemsService.swift */,
+				797CB30A28D167F10055D398 /* NonConsumableItemsService.swift */,
 				797CB30E28D16B190055D398 /* APICategory.swift */,
-				797CB31028D16B280055D398 /* APICategoryItemsResponse.swift */,
+				797CB31028D16B280055D398 /* APIConsumableItemsResponse.swift */,
 				79CBD93128D263B2001E4D92 /* CategoryAPICategoryMapper.swift */,
 				79CBD93528D2656A001E4D92 /* APICategoryItemsResponseCategoryItemsMapper.swift */,
 			);
@@ -361,6 +363,7 @@
 			children = (
 				79CBD92D28D262B3001E4D92 /* Category.swift */,
 				79CBD92F28D262E2001E4D92 /* CategoryItems.swift */,
+				79B8D9FF28D69BC900A12A70 /* FetchCategoryItemsUseCase.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -538,14 +541,15 @@
 				79CDF66828D6718E002DCD45 /* ItemListRowView.swift in Sources */,
 				79CBD93028D262E2001E4D92 /* CategoryItems.swift in Sources */,
 				79CBD93228D263B2001E4D92 /* CategoryAPICategoryMapper.swift in Sources */,
-				797CB31128D16B280055D398 /* APICategoryItemsResponse.swift in Sources */,
-				797CB30B28D167F10055D398 /* CategoryItemsService.swift in Sources */,
+				797CB31128D16B280055D398 /* APIConsumableItemsResponse.swift in Sources */,
+				797CB30B28D167F10055D398 /* NonConsumableItemsService.swift in Sources */,
 				797CB30D28D16AB40055D398 /* ServiceError.swift in Sources */,
 				797CB2C528D154E60055D398 /* ZeldaBreathOfTheWildApp.swift in Sources */,
 				79CBD93628D2656A001E4D92 /* APICategoryItemsResponseCategoryItemsMapper.swift in Sources */,
 				79CBD92E28D262B3001E4D92 /* Category.swift in Sources */,
 				79CDF66A28D67CC6002DCD45 /* ItemDetailsViewModel.swift in Sources */,
 				7927C42428D57ED600ED3044 /* GetCategoryTitleUseCase.swift in Sources */,
+				79B8DA0028D69BC900A12A70 /* FetchCategoryItemsUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

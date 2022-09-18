@@ -19,5 +19,5 @@ enum WebClientError: Error {
 }
 
 protocol WebClientProtocol {
-    func performRequest<T: Decodable>(request: URLRequest, onSuccess: @escaping (T) -> Void, onError: @escaping (WebClientError) -> Void)
+    func performRequest<T: Decodable>(request: URLRequest) async throws -> T
 }

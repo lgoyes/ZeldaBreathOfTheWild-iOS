@@ -9,23 +9,22 @@ import SwiftUI
 import Combine
 
 class ItemListViewModel: ObservableObject {
-    private let nextViewBuilder: ItemListNextViewBuilder
     var title: String
-    private var category: Category
-    
     @Published var items: [SomeItem]
-    private var allItems: [SomeItem] {
-        willSet {
-            updateFilteredItems()
-        }
-    }
-    
     @Published var searchText: String = "" {
         willSet {
             updateFilteredItems()
         }
     }
     
+    private let fetchCategoryItemsUseCase: FetchCategoryItemsUseCaseProtocol
+    private let nextViewBuilder: ItemListNextViewBuilder
+    private var category: Category
+    private var allItems: [SomeItem] {
+        willSet {
+            updateFilteredItems()
+        }
+    }
     private func updateFilteredItems() {
         if searchText == "" {
             items = allItems
@@ -33,14 +32,15 @@ class ItemListViewModel: ObservableObject {
         }
         
         items = allItems.filter({ item in
-            item.name.contains(searchText)
+            item.name.lowercased().contains(searchText.lowercased())
         })
     }
     private let getTitleForCategoryUseCase: GetCategoryTitleUseCase
     
-    init(category: Category, getTitleForCategoryUseCase: GetCategoryTitleUseCase, nextViewBuilder: ItemListNextViewBuilder) {
+    init(category: Category, getTitleForCategoryUseCase: GetCategoryTitleUseCase, nextViewBuilder: ItemListNextViewBuilder, fetchCategoryItemsUseCase: FetchCategoryItemsUseCaseProtocol) {
         self.category = category
         self.getTitleForCategoryUseCase = getTitleForCategoryUseCase
+        self.fetchCategoryItemsUseCase = fetchCategoryItemsUseCase
         self.title =  getTitleForCategoryUseCase.getTitle(for: category)
         self.items = []
         self.allItems = []
@@ -48,9 +48,22 @@ class ItemListViewModel: ObservableObject {
     }
     
     func processOnAppear() {
-        self.allItems = (1...10).map({
-            FoodItem(category: .creatures, id: $0, image: URL(string: "https://botw-compendium.herokuapp.com/api/v2/entry/hot-footed_frog/image"), name: "Any item", description: "any-description", commonLocations: ["one-location"], cookingEffect: "Some effect", heartsRecovered: 1)
-        })
+        Task.init {
+            do {
+                let allItems = try await fetchCategoryItemsUseCase.getItems(for: category)
+                DispatchQueue.main.async { [weak self] in
+                    guard let self = self else { return }
+                    self.processCategoryItems(allItems)
+                }
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
+    private func processCategoryItems(_ categoryItems: CategoryItems) {
+        self.allItems.append(contentsOf: categoryItems.food)
+        self.allItems.append(contentsOf: categoryItems.nonFood)
     }
     
     func getNextViewFor(item: SomeItem) -> ItemDetailsView {

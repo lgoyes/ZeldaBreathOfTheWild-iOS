@@ -8,7 +8,7 @@
 import Foundation
 
 protocol CategoryItemsService {
-    func getItems(for category: Category, onSuccess: @escaping (CategoryItems)->Void, onError: @escaping (ServiceError)->())
+    func getItems(for category: Category) async throws -> CategoryItems
 }
 
 class DefaultCategoryItemsService: CategoryItemsService {
@@ -22,20 +22,17 @@ class DefaultCategoryItemsService: CategoryItemsService {
         self.apiCategoryItemsResponseCategoryItemsMapper = apiCategoryItemsResponseCategoryItemsMapper
     }
     
-    func getItems(for category: Category, onSuccess: @escaping (CategoryItems) -> Void, onError: @escaping (ServiceError) -> ()) {
+    func getItems(for category: Category) async throws -> CategoryItems {
         let apiCategory = categoryAPICategoryMapper.map(input: category)
         let endpoint = Endpoint(httpMethod: .GET, url: URL(string: "\(DataConstant.baseUrl)\(DataConstant.categoryEndpoint)\(apiCategory.rawValue)")!, body: nil)
-        self.webClient.performRequest(request: endpoint.buildRequest()) { [weak self] (response: APICategoryItemsResponse) in
-            guard let self = self else { return }
+        do {
+            let response : APIConsumableItemsResponse = try await self.webClient.performRequest(request: endpoint.buildRequest())
             let categoryItems = self.apiCategoryItemsResponseCategoryItemsMapper.map(input: response)
-            onSuccess(categoryItems)
-        } onError: { webClientError in
-            switch webClientError {
-            case let value where value == .invalidRequest:
-                onError(.invalidRequest)
-            default:
-                onError(.unexpectedResponse)
-            }
+            return categoryItems
+        } catch WebClientError.invalidRequest {
+            throw ServiceError.invalidRequest
+        } catch {
+            throw ServiceError.unexpectedResponse
         }
     }
 }

@@ -49,11 +49,16 @@ struct ItemListView: View {
 }
 
 struct ItemListView_Previews: PreviewProvider {
+    struct FakeUseCase: FetchCategoryItemsUseCaseProtocol {
+        func getItems(for category: Category) async throws -> CategoryItems {
+            return CategoryItems(food: [], nonFood: [])
+        }
+    }
     static var previews: some View {
         let titleRepository = CategoryTitleRepository()
         let titleUseCase = GetCategoryTitleUseCase(repository: titleRepository)
         let itemListNextViewBuilder = ItemListNextViewBuilder(getCategoryTitleUseCase: titleUseCase)
-        let viewModel = ItemListViewModel(category: .treasure, getTitleForCategoryUseCase: titleUseCase, nextViewBuilder: itemListNextViewBuilder)
+        let viewModel = ItemListViewModel(category: .treasure, getTitleForCategoryUseCase: titleUseCase, nextViewBuilder: itemListNextViewBuilder, fetchCategoryItemsUseCase: FakeUseCase())
         return ItemListView(viewModel: viewModel, nextViewBuilder: itemListNextViewBuilder)
     }
 }

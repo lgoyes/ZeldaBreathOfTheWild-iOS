@@ -8,7 +8,7 @@
 import Foundation
 
 protocol APICategoryItemsResponseCategoryItemsMapper {
-    func map(input: APICategoryItemsResponse) -> CategoryItems
+    func map(input: APIConsumableItemsResponse) -> CategoryItems
 }
 
 struct DefaultAPICategoryItemsResponseCategoryItemsMapper: APICategoryItemsResponseCategoryItemsMapper {
@@ -16,9 +16,9 @@ struct DefaultAPICategoryItemsResponseCategoryItemsMapper: APICategoryItemsRespo
     private let apiFoodItemFoodItemMapper = APIFoodItemFoodItemMapper()
     private let apiNonFoodItemNonFoodItemMapper = APINonFoodItemNonFoodItemMapper()
     
-    func map(input: APICategoryItemsResponse) -> CategoryItems {
-        let foodItems = input.food.map { apiFoodItemFoodItemMapper.map(input: $0) }
-        let nonFoodItems = input.nonFood.map { apiNonFoodItemNonFoodItemMapper.map(input: $0) }
+    func map(input: APIConsumableItemsResponse) -> CategoryItems {
+        let foodItems = input.data.food.map { apiFoodItemFoodItemMapper.map(input: $0) }
+        let nonFoodItems = input.data.nonFood.map { apiNonFoodItemNonFoodItemMapper.map(input: $0) }
         return CategoryItems(food: foodItems, nonFood: nonFoodItems)
     }
 }
@@ -45,7 +45,7 @@ struct APINonFoodItemNonFoodItemMapper {
             image: URL(string: input.image),
             name: input.name,
             description: input.description,
-            commonLocations: input.commonLocations,
-            drops: input.drops)
+            commonLocations: input.commonLocations ?? [],
+            drops: input.drops ?? [])
     }
 }

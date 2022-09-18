@@ -1,5 +1,5 @@
 //
-//  APICategoryItemsResponse.swift
+//  APIConsumableItemsResponse.swift
 //  ZeldaBreathOfTheWild
 //
 //  Created by Luis David Goyes on 13/09/22.
@@ -26,9 +26,9 @@ struct APIFoodItem: Decodable {
 
 struct APINonFoodItem: Decodable {
     let category: String
-    let commonLocations: [String]
+    let commonLocations: [String]?
     let description: String
-    let drops: [String]
+    let drops: [String]?
     let id: Int
     let image: String
     let name: String
@@ -38,7 +38,19 @@ struct APINonFoodItem: Decodable {
     }
 }
 
-struct APICategoryItemsResponse: Decodable {
+struct APIConsumableItemsResponseData: Decodable {
     let food: [APIFoodItem]
     let nonFood: [APINonFoodItem]
+    enum CodingKeys: String, CodingKey {
+        case food
+        case nonFood = "non_food"
+    }
+}
+
+struct APIConsumableItemsResponse: Decodable {
+    let data: APIConsumableItemsResponseData
+}
+
+struct APINonConsumableItemsResponse: Decodable {
+    let data: [APINonFoodItem]
 }

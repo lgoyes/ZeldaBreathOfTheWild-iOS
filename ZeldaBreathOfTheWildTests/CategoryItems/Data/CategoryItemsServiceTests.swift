@@ -9,13 +9,13 @@ import XCTest
 @testable import ZeldaBreathOfTheWild
 
 final class CategoryItemsServiceTests: XCTestCase {
-    var sut: DefaultCategoryItemsService!
+    var sut: DefaultConsumableItemsService!
     var webClient: FakeWebClient!
     
     override func setUp() {
         super.setUp()
         webClient = FakeWebClient()
-        self.sut = DefaultCategoryItemsService(
+        self.sut = DefaultConsumableItemsService(
             webClient: webClient,
             categoryAPICategoryMapper: DefaultCategoryAPICategoryMapper(),
             apiCategoryItemsResponseCategoryItemsMapper: DefaultAPICategoryItemsResponseCategoryItemsMapper())
@@ -36,7 +36,7 @@ extension CategoryItemsServiceTests {
         let errorExpectation = XCTestExpectation()
         errorExpectation.isInverted = true
         
-        let apiResponse = APICategoryItemsResponse(food: [APIFoodItemBuilder.build()], nonFood: [APINonFoodItemBuilder.build()])
+        let apiResponse = APIConsumableItemsResponse(food: [APIFoodItemBuilder.build()], nonFood: [APINonFoodItemBuilder.build()])
         webClient.result = apiResponse
         
         sut.getItems(for: .creatures) { categoryItems in

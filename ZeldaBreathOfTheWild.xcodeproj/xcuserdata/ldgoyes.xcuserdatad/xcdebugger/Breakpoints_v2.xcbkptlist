@@ -7,129 +7,79 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A4533FC5-639E-4E50-A323-BC002BA8723B"
-            shouldBeEnabled = "No"
+            uuid = "01F2E080-BF7B-49B3-A6E3-32CB2C03E2D3"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ZeldaBreathOfTheWild/ItemsList/Presentation/ItemListViewModel.swift"
+            filePath = "ZeldaBreathOfTheWild/Common/Data/RESTClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "processOnAppear()"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "performRequest(request:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "A4533FC5-639E-4E50-A323-BC002BA8723B - b68703d0ad1fbca4"
+                  uuid = "01F2E080-BF7B-49B3-A6E3-32CB2C03E2D3 - 59f12f50d8d8e833"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "ZeldaBreathOfTheWild.ItemListViewModel.processOnAppear() -&gt; ()"
+                  symbolName = "(3) suspend resume partial function for ZeldaBreathOfTheWild.RESTClient.performRequest&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(request: Foundation.URLRequest) async throws -&gt; &#x3c4;_0_0"
                   moduleName = "ZeldaBreathOfTheWild"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ldgoyes/Projects/Personal/ZeldaBreathOfTheWild/ZeldaBreathOfTheWild/ItemsList/Presentation/ItemListViewModel.swift"
+                  urlString = "file:///Users/ldgoyes/Projects/Personal/ZeldaBreathOfTheWild/ZeldaBreathOfTheWild/Common/Data/RESTClient.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "51"
-                  endingLineNumber = "51"
-                  offsetFromSymbolStart = "52">
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "744">
                </Location>
                <Location
-                  uuid = "A4533FC5-639E-4E50-A323-BC002BA8723B - c80952cdf794d1f4"
+                  uuid = "01F2E080-BF7B-49B3-A6E3-32CB2C03E2D3 - 59f12f50d8d8e833"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Int) -&gt; ZeldaBreathOfTheWild.SomeItem in ZeldaBreathOfTheWild.ItemListViewModel.processOnAppear() -&gt; ()"
+                  symbolName = "(3) suspend resume partial function for ZeldaBreathOfTheWild.RESTClient.performRequest&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(request: Foundation.URLRequest) async throws -&gt; &#x3c4;_0_0"
                   moduleName = "ZeldaBreathOfTheWild"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ldgoyes/Projects/Personal/ZeldaBreathOfTheWild/ZeldaBreathOfTheWild/ItemsList/Presentation/ItemListViewModel.swift"
+                  urlString = "file:///Users/ldgoyes/Projects/Personal/ZeldaBreathOfTheWild/ZeldaBreathOfTheWild/Common/Data/RESTClient.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "51"
-                  endingLineNumber = "51"
-                  offsetFromSymbolStart = "85">
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "797">
+               </Location>
+               <Location
+                  uuid = "01F2E080-BF7B-49B3-A6E3-32CB2C03E2D3 - 2bbb040fadcc8630"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for ZeldaBreathOfTheWild.RESTClient.performRequest&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(request: Foundation.URLRequest) async throws -&gt; &#x3c4;_0_0"
+                  moduleName = "ZeldaBreathOfTheWild"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ldgoyes/Projects/Personal/ZeldaBreathOfTheWild/ZeldaBreathOfTheWild/Common/Data/RESTClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "163">
+               </Location>
+               <Location
+                  uuid = "01F2E080-BF7B-49B3-A6E3-32CB2C03E2D3 - 2bbb040fadcc8630"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for ZeldaBreathOfTheWild.RESTClient.performRequest&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(request: Foundation.URLRequest) async throws -&gt; &#x3c4;_0_0"
+                  moduleName = "ZeldaBreathOfTheWild"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ldgoyes/Projects/Personal/ZeldaBreathOfTheWild/ZeldaBreathOfTheWild/Common/Data/RESTClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "210">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "215700F9-7C4F-4B42-92E7-D737E4E77B1C"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ZeldaBreathOfTheWild/ItemsList/Presentation/ItemListViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "updateFilteredItems()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "380561DA-2684-49C7-BF2C-91C2F2D5484E"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ZeldaBreathOfTheWild/ItemsList/Presentation/ItemListView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "body"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "380561DA-2684-49C7-BF2C-91C2F2D5484E - 89ccd163b8894fef"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; SwiftUI.ForEach&lt;SwiftUI.Binding&lt;Swift.Array&lt;ZeldaBreathOfTheWild.SomeItem&gt;&gt;, Swift.Int, SwiftUI.NavigationLink&lt;ZeldaBreathOfTheWild.ItemListRowView, SwiftUI.EmptyView&gt;&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.searchable&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.StringProtocol&gt;(text: SwiftUI.Binding&lt;Swift.String&gt;, placement: SwiftUI.SearchFieldPlacement, prompt: &#x3c4;_1_0) -&gt; some&gt;&gt;.0 in ZeldaBreathOfTheWild.ItemListView.body.getter : some"
-                  moduleName = "ZeldaBreathOfTheWild"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ldgoyes/Projects/Personal/ZeldaBreathOfTheWild/ZeldaBreathOfTheWild/ItemsList/Presentation/ItemListView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27"
-                  offsetFromSymbolStart = "197">
-               </Location>
-               <Location
-                  uuid = "380561DA-2684-49C7-BF2C-91C2F2D5484E - a41a383491cbdfc8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (SwiftUI.Binding&lt;ZeldaBreathOfTheWild.SomeItem&gt;) -&gt; SwiftUI.NavigationLink&lt;ZeldaBreathOfTheWild.ItemListRowView, SwiftUI.EmptyView&gt; in closure #1 () -&gt; SwiftUI.ForEach&lt;SwiftUI.Binding&lt;Swift.Array&lt;ZeldaBreathOfTheWild.SomeItem&gt;&gt;, Swift.Int, SwiftUI.NavigationLink&lt;ZeldaBreathOfTheWild.ItemListRowView, SwiftUI.EmptyView&gt;&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.searchable&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.StringProtocol&gt;(text: SwiftUI.Binding&lt;Swift.String&gt;, placement: SwiftUI.SearchFieldPlacement, prompt: &#x3c4;_1_0) -&gt; some&gt;&gt;.0 in ZeldaBreathOfTheWild.ItemListView.body.getter : some"
-                  moduleName = "ZeldaBreathOfTheWild"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ldgoyes/Projects/Personal/ZeldaBreathOfTheWild/ZeldaBreathOfTheWild/ItemsList/Presentation/ItemListView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27"
-                  offsetFromSymbolStart = "171">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E27D2422-6005-4505-BC96-7445CC1FE192"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ZeldaBreathOfTheWild/ItemsList/Presentation/ItemListViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "getNextViewFor(item:)"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

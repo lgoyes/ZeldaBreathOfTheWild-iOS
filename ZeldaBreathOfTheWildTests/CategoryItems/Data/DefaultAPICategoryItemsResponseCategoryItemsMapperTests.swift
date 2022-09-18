@@ -24,7 +24,7 @@ final class DefaultAPICategoryItemsResponseCategoryItemsMapperTests: XCTestCase 
     
     // MARK: - map
     func test_WHEN_map_GIVEN_someAPICategoryItemsResponse_THEN_itShouldReturnACategoryItemsObject() {
-        let apiResponse = APICategoryItemsResponse(food: [
+        let apiResponse = APIConsumableItemsResponse(food: [
             APIFoodItemBuilder.build()
         ], nonFood: [
             APINonFoodItemBuilder.build()
