@@ -25,22 +25,20 @@ struct ItemListView: View {
     }
     
     var body: some View {
-        VStack {
-            List {
-                ForEach($viewModel.items, id: \.id) { item in
-                    NavigationLink {
-                        viewModel.getNextViewFor(item: item.wrappedValue)
-                    } label: {
-                        ItemListRowView(
-                            title: item.name,
-                            imageURL: item.image)
-                    }
+        List {
+            ForEach($viewModel.items, id: \.id) { item in
+                NavigationLink {
+                    viewModel.getNextViewFor(item: item.wrappedValue)
+                } label: {
+                    ItemListRowView(
+                        title: item.name,
+                        imageURL: item.image)
                 }
             }
-            .listStyle(ItemListViewStyle.listStyle)
-            .searchable(text: $viewModel.searchText,
-                        prompt: ItemListViewConstant.searchBarPrompt)
         }
+        .listStyle(ItemListViewStyle.listStyle)
+        .searchable(text: $viewModel.searchText,
+                    prompt: ItemListViewConstant.searchBarPrompt)
         .navigationTitle(Text(viewModel.title))
         .onAppear {
             viewModel.processOnAppear()

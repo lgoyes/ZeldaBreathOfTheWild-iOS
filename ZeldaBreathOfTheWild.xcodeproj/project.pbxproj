@@ -39,12 +39,19 @@
 		79B347C228D55EA600AAB300 /* ItemListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B347C128D55EA600AAB300 /* ItemListViewModel.swift */; };
 		79B8D9FE28D6927A00A12A70 /* ItemListNextViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B8D9FD28D6927A00A12A70 /* ItemListNextViewBuilder.swift */; };
 		79B8DA0028D69BC900A12A70 /* FetchCategoryItemsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B8D9FF28D69BC900A12A70 /* FetchCategoryItemsUseCase.swift */; };
+		79B8DA0428D6AB8400A12A70 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B8DA0328D6AB8400A12A70 /* NetworkRouter.swift */; };
+		79B8DA0628D6AD3600A12A70 /* CategoryItemsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B8DA0528D6AD3600A12A70 /* CategoryItemsService.swift */; };
+		79B8DA0828D6ADB600A12A70 /* BaseCategoryItemsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B8DA0728D6ADB600A12A70 /* BaseCategoryItemsService.swift */; };
+		79B8DA0A28D6BD4300A12A70 /* ConsumableItemsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B8DA0928D6BD4300A12A70 /* ConsumableItemsService.swift */; };
+		79B8DA0C28D6BDA900A12A70 /* APINonConsumableItemsResponseCategoryItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B8DA0B28D6BDA900A12A70 /* APINonConsumableItemsResponseCategoryItemsMapper.swift */; };
+		79B8DA0E28D6BE1200A12A70 /* APINonFoodItemNonFoodItemMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B8DA0D28D6BE1200A12A70 /* APINonFoodItemNonFoodItemMapper.swift */; };
+		79B8DA1028D6BE2600A12A70 /* APIFoodItemFoodItemMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B8DA0F28D6BE2600A12A70 /* APIFoodItemFoodItemMapper.swift */; };
 		79CBD92B28D25DE9001E4D92 /* FakeWebClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CBD92A28D25DE9001E4D92 /* FakeWebClient.swift */; };
 		79CBD92E28D262B3001E4D92 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CBD92D28D262B3001E4D92 /* Category.swift */; };
 		79CBD93028D262E2001E4D92 /* CategoryItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CBD92F28D262E2001E4D92 /* CategoryItems.swift */; };
 		79CBD93228D263B2001E4D92 /* CategoryAPICategoryMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CBD93128D263B2001E4D92 /* CategoryAPICategoryMapper.swift */; };
 		79CBD93428D2643D001E4D92 /* MapperError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CBD93328D2643D001E4D92 /* MapperError.swift */; };
-		79CBD93628D2656A001E4D92 /* APICategoryItemsResponseCategoryItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CBD93528D2656A001E4D92 /* APICategoryItemsResponseCategoryItemsMapper.swift */; };
+		79CBD93628D2656A001E4D92 /* APIConsumableItemsResponseCategoryItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CBD93528D2656A001E4D92 /* APIConsumableItemsResponseCategoryItemsMapper.swift */; };
 		79CBD93828D26899001E4D92 /* EndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CBD93728D26899001E4D92 /* EndpointTests.swift */; };
 		79CDF66628D66B93002DCD45 /* CategoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CDF66528D66B93002DCD45 /* CategoryCardView.swift */; };
 		79CDF66828D6718E002DCD45 /* ItemListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CDF66728D6718E002DCD45 /* ItemListRowView.swift */; };
@@ -106,12 +113,19 @@
 		79B347C128D55EA600AAB300 /* ItemListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewModel.swift; sourceTree = "<group>"; };
 		79B8D9FD28D6927A00A12A70 /* ItemListNextViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListNextViewBuilder.swift; sourceTree = "<group>"; };
 		79B8D9FF28D69BC900A12A70 /* FetchCategoryItemsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCategoryItemsUseCase.swift; sourceTree = "<group>"; };
+		79B8DA0328D6AB8400A12A70 /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		79B8DA0528D6AD3600A12A70 /* CategoryItemsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemsService.swift; sourceTree = "<group>"; };
+		79B8DA0728D6ADB600A12A70 /* BaseCategoryItemsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCategoryItemsService.swift; sourceTree = "<group>"; };
+		79B8DA0928D6BD4300A12A70 /* ConsumableItemsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumableItemsService.swift; sourceTree = "<group>"; };
+		79B8DA0B28D6BDA900A12A70 /* APINonConsumableItemsResponseCategoryItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APINonConsumableItemsResponseCategoryItemsMapper.swift; sourceTree = "<group>"; };
+		79B8DA0D28D6BE1200A12A70 /* APINonFoodItemNonFoodItemMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APINonFoodItemNonFoodItemMapper.swift; sourceTree = "<group>"; };
+		79B8DA0F28D6BE2600A12A70 /* APIFoodItemFoodItemMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFoodItemFoodItemMapper.swift; sourceTree = "<group>"; };
 		79CBD92A28D25DE9001E4D92 /* FakeWebClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeWebClient.swift; sourceTree = "<group>"; };
 		79CBD92D28D262B3001E4D92 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		79CBD92F28D262E2001E4D92 /* CategoryItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItems.swift; sourceTree = "<group>"; };
 		79CBD93128D263B2001E4D92 /* CategoryAPICategoryMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryAPICategoryMapper.swift; sourceTree = "<group>"; };
 		79CBD93328D2643D001E4D92 /* MapperError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapperError.swift; sourceTree = "<group>"; };
-		79CBD93528D2656A001E4D92 /* APICategoryItemsResponseCategoryItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICategoryItemsResponseCategoryItemsMapper.swift; sourceTree = "<group>"; };
+		79CBD93528D2656A001E4D92 /* APIConsumableItemsResponseCategoryItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConsumableItemsResponseCategoryItemsMapper.swift; sourceTree = "<group>"; };
 		79CBD93728D26899001E4D92 /* EndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointTests.swift; sourceTree = "<group>"; };
 		79CDF66528D66B93002DCD45 /* CategoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCardView.swift; sourceTree = "<group>"; };
 		79CDF66728D6718E002DCD45 /* ItemListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListRowView.swift; sourceTree = "<group>"; };
@@ -261,6 +275,7 @@
 				797CB30C28D16AB40055D398 /* ServiceError.swift */,
 				797CB31228D16C4A0055D398 /* DataConstants.swift */,
 				79CBD93328D2643D001E4D92 /* MapperError.swift */,
+				79B8DA0328D6AB8400A12A70 /* NetworkRouter.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -315,11 +330,17 @@
 		797CB30928D167D50055D398 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				79B8DA0528D6AD3600A12A70 /* CategoryItemsService.swift */,
+				79B8DA0728D6ADB600A12A70 /* BaseCategoryItemsService.swift */,
 				797CB30A28D167F10055D398 /* NonConsumableItemsService.swift */,
+				79B8DA0928D6BD4300A12A70 /* ConsumableItemsService.swift */,
 				797CB30E28D16B190055D398 /* APICategory.swift */,
 				797CB31028D16B280055D398 /* APIConsumableItemsResponse.swift */,
 				79CBD93128D263B2001E4D92 /* CategoryAPICategoryMapper.swift */,
-				79CBD93528D2656A001E4D92 /* APICategoryItemsResponseCategoryItemsMapper.swift */,
+				79CBD93528D2656A001E4D92 /* APIConsumableItemsResponseCategoryItemsMapper.swift */,
+				79B8DA0B28D6BDA900A12A70 /* APINonConsumableItemsResponseCategoryItemsMapper.swift */,
+				79B8DA0D28D6BE1200A12A70 /* APINonFoodItemNonFoodItemMapper.swift */,
+				79B8DA0F28D6BE2600A12A70 /* APIFoodItemFoodItemMapper.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -523,9 +544,11 @@
 				7927C42228D57E6000ED3044 /* CategoryTitleRepository.swift in Sources */,
 				79B347C228D55EA600AAB300 /* ItemListViewModel.swift in Sources */,
 				79B8D9FE28D6927A00A12A70 /* ItemListNextViewBuilder.swift in Sources */,
+				79B8DA0828D6ADB600A12A70 /* BaseCategoryItemsService.swift in Sources */,
 				797CB2FE28D15B530055D398 /* RESTClient.swift in Sources */,
 				797CB30528D165DE0055D398 /* Endpoint.swift in Sources */,
 				7915FB1228D3C438009CBE0B /* ContentView.swift in Sources */,
+				79B8DA0628D6AD3600A12A70 /* CategoryItemsService.swift in Sources */,
 				797CB2FC28D15B040055D398 /* WebClientProtocol.swift in Sources */,
 				7927C42028D5709D00ED3044 /* Color+hexaInit.swift in Sources */,
 				7915FB0928D3C0AE009CBE0B /* ItemListView.swift in Sources */,
@@ -535,21 +558,26 @@
 				79CBD93428D2643D001E4D92 /* MapperError.swift in Sources */,
 				7915FB0628D3BF80009CBE0B /* ItemDetailsView.swift in Sources */,
 				797CB31328D16C4A0055D398 /* DataConstants.swift in Sources */,
+				79B8DA0C28D6BDA900A12A70 /* APINonConsumableItemsResponseCategoryItemsMapper.swift in Sources */,
 				79CDF67028D68382002DCD45 /* CategoryListViewModel.swift in Sources */,
 				79CDF66C28D6822E002DCD45 /* CategoryListNextViewBuilder.swift in Sources */,
+				79B8DA0A28D6BD4300A12A70 /* ConsumableItemsService.swift in Sources */,
 				79CDF66628D66B93002DCD45 /* CategoryCardView.swift in Sources */,
 				79CDF66828D6718E002DCD45 /* ItemListRowView.swift in Sources */,
+				79B8DA0E28D6BE1200A12A70 /* APINonFoodItemNonFoodItemMapper.swift in Sources */,
+				79B8DA0428D6AB8400A12A70 /* NetworkRouter.swift in Sources */,
 				79CBD93028D262E2001E4D92 /* CategoryItems.swift in Sources */,
 				79CBD93228D263B2001E4D92 /* CategoryAPICategoryMapper.swift in Sources */,
 				797CB31128D16B280055D398 /* APIConsumableItemsResponse.swift in Sources */,
 				797CB30B28D167F10055D398 /* NonConsumableItemsService.swift in Sources */,
 				797CB30D28D16AB40055D398 /* ServiceError.swift in Sources */,
 				797CB2C528D154E60055D398 /* ZeldaBreathOfTheWildApp.swift in Sources */,
-				79CBD93628D2656A001E4D92 /* APICategoryItemsResponseCategoryItemsMapper.swift in Sources */,
+				79CBD93628D2656A001E4D92 /* APIConsumableItemsResponseCategoryItemsMapper.swift in Sources */,
 				79CBD92E28D262B3001E4D92 /* Category.swift in Sources */,
 				79CDF66A28D67CC6002DCD45 /* ItemDetailsViewModel.swift in Sources */,
 				7927C42428D57ED600ED3044 /* GetCategoryTitleUseCase.swift in Sources */,
 				79B8DA0028D69BC900A12A70 /* FetchCategoryItemsUseCase.swift in Sources */,
+				79B8DA1028D6BE2600A12A70 /* APIFoodItemFoodItemMapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

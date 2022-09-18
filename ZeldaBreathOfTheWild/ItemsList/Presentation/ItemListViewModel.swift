@@ -12,7 +12,7 @@ class ItemListViewModel: ObservableObject {
     var title: String
     @Published var items: [SomeItem]
     @Published var searchText: String = "" {
-        willSet {
+        didSet {
             updateFilteredItems()
         }
     }
@@ -20,21 +20,7 @@ class ItemListViewModel: ObservableObject {
     private let fetchCategoryItemsUseCase: FetchCategoryItemsUseCaseProtocol
     private let nextViewBuilder: ItemListNextViewBuilder
     private var category: Category
-    private var allItems: [SomeItem] {
-        willSet {
-            updateFilteredItems()
-        }
-    }
-    private func updateFilteredItems() {
-        if searchText == "" {
-            items = allItems
-            return
-        }
-        
-        items = allItems.filter({ item in
-            item.name.lowercased().contains(searchText.lowercased())
-        })
-    }
+    private var allItems: [SomeItem]
     private let getTitleForCategoryUseCase: GetCategoryTitleUseCase
     
     init(category: Category, getTitleForCategoryUseCase: GetCategoryTitleUseCase, nextViewBuilder: ItemListNextViewBuilder, fetchCategoryItemsUseCase: FetchCategoryItemsUseCaseProtocol) {
@@ -62,8 +48,22 @@ class ItemListViewModel: ObservableObject {
     }
     
     private func processCategoryItems(_ categoryItems: CategoryItems) {
-        self.allItems.append(contentsOf: categoryItems.food)
-        self.allItems.append(contentsOf: categoryItems.nonFood)
+        var items = [SomeItem]()
+        items.append(contentsOf: categoryItems.food)
+        items.append(contentsOf: categoryItems.nonFood)
+        self.allItems = items
+        updateFilteredItems()
+    }
+    
+    private func updateFilteredItems() {
+        if searchText == "" {
+            items = allItems
+            return
+        }
+        
+        items = allItems.filter({ item in
+            item.name.lowercased().contains(searchText.lowercased())
+        })
     }
     
     func getNextViewFor(item: SomeItem) -> ItemDetailsView {

@@ -17,11 +17,17 @@ struct CategoryListNextViewBuilder {
         let urlSession = URLSession(configuration: urlSessionConfiguration)
         let jsonDecoder = JSONDecoder()
         let webClient = RESTClient(urlSession: urlSession, jsonDecoder: jsonDecoder)
-        let categoryItemsService = DefaultCategoryItemsService(
+        let networkRouter = NetworkRouter(categoryAPICategoryMapper: DefaultCategoryAPICategoryMapper())
+        let consumableItemsService = ConsumableItemsService(
+            apiConsumableItemsResponseCategoryItemsMapper: DefaultAPIConsumableItemsResponseCategoryItemsMapper(),
             webClient: webClient,
-            categoryAPICategoryMapper: DefaultCategoryAPICategoryMapper(),
-            apiCategoryItemsResponseCategoryItemsMapper: DefaultAPICategoryItemsResponseCategoryItemsMapper())
-        self.fetchCategoryItemsUseCase = FetchCategoryItemsUseCase(service: categoryItemsService)
+            networkRouter: networkRouter)
+        let nonConsumableItemsService = NonConsumableItemsService(
+            apiNonConsumableItemsResponseCategoryItemsMapper: DefaultAPINonConsumableItemsResponseCategoryItemsMapper(),
+            webClient: webClient,
+            networkRouter: networkRouter)
+        let services: [CategoryItemsService] = [consumableItemsService, nonConsumableItemsService]
+        self.fetchCategoryItemsUseCase = FetchCategoryItemsUseCase(services: services)
         self.titleUseCase = titleUseCase
         self.nextViewBuilder = ItemListNextViewBuilder(getCategoryTitleUseCase: titleUseCase)
     }

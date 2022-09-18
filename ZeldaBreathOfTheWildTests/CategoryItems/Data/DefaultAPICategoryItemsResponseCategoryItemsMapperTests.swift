@@ -10,11 +10,11 @@ import XCTest
 
 final class DefaultAPICategoryItemsResponseCategoryItemsMapperTests: XCTestCase {
 
-    var sut: DefaultAPICategoryItemsResponseCategoryItemsMapper!
+    var sut: DefaultAPIConsumableItemsResponseCategoryItemsMapper!
     
     override func setUp() {
         super.setUp()
-        sut = DefaultAPICategoryItemsResponseCategoryItemsMapper()
+        sut = DefaultAPIConsumableItemsResponseCategoryItemsMapper()
     }
 
     override func tearDown() {

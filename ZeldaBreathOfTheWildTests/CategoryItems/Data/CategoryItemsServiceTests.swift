@@ -18,7 +18,7 @@ final class CategoryItemsServiceTests: XCTestCase {
         self.sut = DefaultConsumableItemsService(
             webClient: webClient,
             categoryAPICategoryMapper: DefaultCategoryAPICategoryMapper(),
-            apiCategoryItemsResponseCategoryItemsMapper: DefaultAPICategoryItemsResponseCategoryItemsMapper())
+            apiCategoryItemsResponseCategoryItemsMapper: DefaultAPIConsumableItemsResponseCategoryItemsMapper())
     }
 
     override func tearDown() {
