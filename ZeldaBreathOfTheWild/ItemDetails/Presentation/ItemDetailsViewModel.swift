@@ -24,4 +24,8 @@ struct ItemDetailsViewModel {
         self.category = category
         self.description = description
     }
+    
+    func shouldShowCommonLocations() -> Bool {
+        commonLocations != ""
+    }
 }

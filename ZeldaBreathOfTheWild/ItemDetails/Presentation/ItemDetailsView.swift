@@ -71,25 +71,27 @@ struct ItemDetailsView: View {
                     .multilineTextAlignment(.leading)
                     .font(.body)
                     .padding(.bottom, ItemDetailsViewStyle.Description.distanceToDivider)
+                
+                if viewModel.shouldShowCommonLocations() {
+                    Divider()
+                        .background(ItemDetailsViewStyle.Divider.color)
+                        .padding(.bottom, ItemDetailsViewStyle.Divider.distanceToCommonLocationsTitle)
                     
-                Divider()
-                    .background(ItemDetailsViewStyle.Divider.color)
-                    .padding(.bottom, ItemDetailsViewStyle.Divider.distanceToCommonLocationsTitle)
-                
-                Text(ItemDetailsViewConstant.commonLocationsTitle)
-                    .font(ItemDetailsViewStyle.LocationsTitle.font)
-                    .fontWeight(ItemDetailsViewStyle.LocationsTitle.fontWeight)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(.bottom, ItemDetailsViewStyle.LocationsTitle.distanceToLocationsContent)
-                
-                HStack {
-                    Image(systemName: ItemDetailsViewConstant.locationsImageName)
-                    Text(viewModel.commonLocations)
-                        .font(ItemDetailsViewStyle.Locations.font)
-                        .fontWeight(ItemDetailsViewStyle.Locations.fontWeight)
+                    Text(ItemDetailsViewConstant.commonLocationsTitle)
+                        .font(ItemDetailsViewStyle.LocationsTitle.font)
+                        .fontWeight(ItemDetailsViewStyle.LocationsTitle.fontWeight)
                         .frame(maxWidth: .infinity, alignment: .leading)
-                        .multilineTextAlignment(.leading)
-                        .foregroundColor(ItemDetailsViewStyle.Locations.textColor)
+                        .padding(.bottom, ItemDetailsViewStyle.LocationsTitle.distanceToLocationsContent)
+                    
+                    HStack {
+                        Image(systemName: ItemDetailsViewConstant.locationsImageName)
+                        Text(viewModel.commonLocations)
+                            .font(ItemDetailsViewStyle.Locations.font)
+                            .fontWeight(ItemDetailsViewStyle.Locations.fontWeight)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .multilineTextAlignment(.leading)
+                            .foregroundColor(ItemDetailsViewStyle.Locations.textColor)
+                    }
                 }
                 
                 Spacer()
