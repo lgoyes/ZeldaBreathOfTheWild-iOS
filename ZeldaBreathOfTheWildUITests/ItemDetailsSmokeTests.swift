@@ -35,13 +35,11 @@ final class ItemDetailsSmokeTests: XCTestCase {
         let searchBarExists = searchBar.waitForExistence(timeout: 10.0)
         XCTAssert(searchBarExists)
         
-        searchBar.tap()
+        UIPasteboard.general.string = "Sal"
         
-        let searchText = "Sal"
-        for letter in searchText {
-            let key = sut.keys[String(letter)]
-            key.tap()
-        }
+        searchBar.tap()
+        searchBar.tap()
+        sut.menuItems["Paste"].tap()
         
         let salmonEntry = sut.collectionViews.buttons["hearty salmon"]
         let salmonEntryExists = salmonEntry.waitForExistence(timeout: 10.0)

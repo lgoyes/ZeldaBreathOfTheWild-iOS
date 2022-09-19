@@ -50,22 +50,14 @@ final class ItemListSmokeTest: XCTestCase {
         let searchBarExists = searchBar.waitForExistence(timeout: 10.0)
         XCTAssert(searchBarExists)
         
-        searchBar.tap()
+        UIPasteboard.general.string = "Sal"
         
-        let searchText = "Sal"
-        for letter in searchText {
-            let key = sut.keys[String(letter)]
-            key.tap()
-        }
+        searchBar.tap()
+        searchBar.tap()
+        sut.menuItems["Paste"].tap()
         
         let salmonEntry = sut.collectionViews.buttons["hearty salmon"]
         let salmonEntryExists = salmonEntry.waitForExistence(timeout: 10.0)
         XCTAssertTrue(salmonEntryExists)
-        
-        //XCUIApplication().navigationBars["Creatures"].searchFields["Search..."].tap()
-        
-        //firstButton.tap()
-        //app.scrollViews.otherElements.staticTexts["This rare butterfly only shows itself when it rains. The organs in its body produce an insulating compound. When made into an elixir, it offers electrical resistance."].tap()
-        
     }
 }
