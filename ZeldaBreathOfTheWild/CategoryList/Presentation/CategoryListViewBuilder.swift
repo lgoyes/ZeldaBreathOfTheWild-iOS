@@ -10,7 +10,7 @@ import Foundation
 struct CategoryListViewBuilder {
     private let nextViewBuilder: CategoryListNextViewBuilder
     private let titleRepository: CategoryTitleRepository
-    private let titleUseCase: GetCategoryTitleUseCase
+    private let titleUseCase: GetCategoryTitleUseCaseProtocol
     init() {
         titleRepository = CategoryTitleRepository()
         titleUseCase = GetCategoryTitleUseCase(repository: titleRepository)

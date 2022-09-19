@@ -12,7 +12,7 @@ protocol FetchCategoryItemsUseCaseProtocol {
 }
 
 struct FetchCategoryItemsUseCase: FetchCategoryItemsUseCaseProtocol {
-    enum Error: Swift.Error {
+    enum Error: Swift.Error, Equatable {
         case serviceNotFound(category: Category)
     }
     

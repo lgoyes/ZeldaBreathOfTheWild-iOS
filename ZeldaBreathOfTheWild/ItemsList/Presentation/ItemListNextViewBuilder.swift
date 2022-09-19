@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ItemListNextViewBuilder {
-    let getCategoryTitleUseCase: GetCategoryTitleUseCase
+    let getCategoryTitleUseCase: GetCategoryTitleUseCaseProtocol
     
-    init(getCategoryTitleUseCase: GetCategoryTitleUseCase) {
+    init(getCategoryTitleUseCase: GetCategoryTitleUseCaseProtocol) {
         self.getCategoryTitleUseCase = getCategoryTitleUseCase
     }
     

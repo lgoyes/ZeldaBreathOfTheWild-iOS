@@ -10,7 +10,7 @@ import Foundation
 struct CategoryListViewModel {
     let categories: [Category]
     let cardNextViewBuilder: CategoryListNextViewBuilder
-    let getTitleForCategoryUseCase: GetCategoryTitleUseCase
+    let getTitleForCategoryUseCase: GetCategoryTitleUseCaseProtocol
     
     func getTitle(for category: Category) -> String {
         getTitleForCategoryUseCase.getTitle(for: category)

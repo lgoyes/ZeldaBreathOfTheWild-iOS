@@ -21,7 +21,7 @@ class BaseCategoryItemsService<APIResponse: Decodable>: CategoryItemsService {
     }
     
     func getValidCategories() -> [Category] {
-        fatalError()
+        fatalError(CommonConstant.ErrorMessage.abstractMethod)
     }
     
     func getItems(for category: Category) async throws -> CategoryItems {
@@ -39,6 +39,6 @@ class BaseCategoryItemsService<APIResponse: Decodable>: CategoryItemsService {
     }
     
     func map(apiResponse: APIResponse) -> CategoryItems {
-        fatalError()
+        fatalError(CommonConstant.ErrorMessage.abstractMethod)
     }
 }

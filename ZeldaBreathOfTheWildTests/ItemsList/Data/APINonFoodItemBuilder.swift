@@ -29,4 +29,15 @@ struct APINonFoodItemBuilder {
             image: Constant.someImage,
             name: Constant.someName)
     }
+    
+    static func buildWithoutCommonLocationsAndDrops() -> APINonFoodItem {
+        return APINonFoodItem(
+            category: Constant.someCategory,
+            commonLocations: nil,
+            description: Constant.someDescription,
+            drops: nil,
+            id: Constant.someId,
+            image: Constant.someImage,
+            name: Constant.someName)
+    }
 }

@@ -7,7 +7,11 @@
 
 import Foundation
 
-struct GetCategoryTitleUseCase {
+protocol GetCategoryTitleUseCaseProtocol {
+    func getTitle(for category: Category) -> String
+}
+
+struct GetCategoryTitleUseCase: GetCategoryTitleUseCaseProtocol {
     private let repository: CategoryTitleRepository
     
     init(repository: CategoryTitleRepository) {

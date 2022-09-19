@@ -10,12 +10,7 @@ import XCTest
 
 final class EndpointTests: XCTestCase {
 
-    var sut: Endpoint!
-    
-    override func setUp() {
-        super.setUp()
-        
-    }
+    private var sut: Endpoint!
 
     override func tearDown() {
         sut = nil

@@ -12,7 +12,7 @@ fileprivate struct DummyResponseType: Decodable { }
 
 final class RESTClientTests: XCTestCase {
 
-    var sut: RESTClient!
+    private var sut: RESTClient!
     
     override func setUp() {
         super.setUp()
@@ -32,7 +32,7 @@ final class RESTClientTests: XCTestCase {
         super.tearDown()
     }
 
-    func test_WHEN_performRequest_GIVEN_someErrorInRequestExecution_THEN_itShouldInvokeOnErrorClosureWithErrorCaseInvalidRequest() {
+    func test_WHEN_performRequest_GIVEN_someErrorInRequestExecution_THEN_itShouldThrowErrorCaseInvalidRequest() {
         enum AnyError: Swift.Error {
             case anything
         }
@@ -43,60 +43,69 @@ final class RESTClientTests: XCTestCase {
         
         MockURLProtocol.error = AnyError.anything
         
-        let successExpectation = XCTestExpectation()
-        let failureExpectation = XCTestExpectation()
-        failureExpectation.isInverted = true
+        let expectation = XCTestExpectation()
         let request = URLRequest(url: URL(string: "www.google.com")!)
-        sut.performRequest(request: request) { (response: DummyResponseType) in
-            failureExpectation.fulfill()
-        } onError: { error in
-            XCTAssertEqual(error, .invalidRequest)
-            successExpectation.fulfill()
+        
+        Task.init(priority: .userInitiated) {
+            do {
+                let response : DummyResponseType = try await sut.performRequest(request: request)
+                XCTFail()
+            } catch {
+                XCTAssertEqual(error as! WebClientError, .invalidRequest)
+            }
+            expectation.fulfill()
         }
-        wait(for: [successExpectation, failureExpectation], timeout: 0.1)
+        
+        wait(for: [expectation], timeout: 0.1)
     }
     
-    func test_WHEN_performRequest_GIVEN_noErrorInRequest_someResponseWithStatusCodeOutsideValidRange_THEN_itShouldInvokeOnErrorClosureWithErrorCaseInvalidStatusCodeResponse() {
+    func test_WHEN_performRequest_GIVEN_noErrorInRequest_someResponseWithStatusCodeOutsideValidRange_THEN_itShouldThrowErrorCaseInvalidRequest() {
         
         MockURLProtocol.requestHandler = { request in
             let response = HTTPURLResponse(url: request.url!, statusCode: 400, httpVersion: nil, headerFields: nil)!
             return (response, Data())
         }
         
-        let successExpectation = XCTestExpectation()
-        let failureExpectation = XCTestExpectation()
-        failureExpectation.isInverted = true
+        let expectation = XCTestExpectation()
         let request = URLRequest(url: URL(string: "www.google.com")!)
-        sut.performRequest(request: request) { (response: DummyResponseType) in
-            failureExpectation.fulfill()
-        } onError: { error in
-            XCTAssertEqual(error, .invalidStatusCodeResponse)
-            successExpectation.fulfill()
+        
+        Task.init(priority: .userInitiated) {
+            do {
+                let response : DummyResponseType = try await sut.performRequest(request: request)
+                XCTFail()
+            } catch {
+                XCTAssertEqual(error as! WebClientError, .invalidRequest)
+            }
+            expectation.fulfill()
         }
-        wait(for: [successExpectation, failureExpectation], timeout: 0.1)
+        
+        wait(for: [expectation], timeout: 0.1)
     }
     
-    func test_WHEN_performRequest_GIVEN_noErrorInRequest_someResponseWithValidStatusCode_someDataThatCanNotBeDecodedProperly_THEN_itShouldInvokeOnErrorClosureWithErrorCaseErrorDecodingData() {
+    func test_WHEN_performRequest_GIVEN_noErrorInRequest_someResponseWithValidStatusCode_someDataThatCanNotBeDecodedProperly_THEN_itShouldThrowErrorCaseInvalidRequest() {
         
         MockURLProtocol.requestHandler = { request in
             let response = HTTPURLResponse(url: request.url!, statusCode: 200, httpVersion: nil, headerFields: nil)!
             return (response, Data())
         }
         
-        let successExpectation = XCTestExpectation()
-        let failureExpectation = XCTestExpectation()
-        failureExpectation.isInverted = true
+        let expectation = XCTestExpectation()
         let request = URLRequest(url: URL(string: "www.google.com")!)
-        sut.performRequest(request: request) { (response: DummyResponseType) in
-            failureExpectation.fulfill()
-        } onError: { error in
-            XCTAssertEqual(error, .errorDecodingData)
-            successExpectation.fulfill()
+        
+        Task.init(priority: .userInitiated) {
+            do {
+                let response : DummyResponseType = try await sut.performRequest(request: request)
+                XCTFail()
+            } catch {
+                XCTAssertEqual(error as! WebClientError, .invalidRequest)
+            }
+            expectation.fulfill()
         }
-        wait(for: [successExpectation, failureExpectation], timeout: 0.1)
+        
+        wait(for: [expectation], timeout: 0.1)
     }
     
-    func test_WHEN_performRequest_GIVEN_noErrorInRequest_someResponseWithValidStatusCode_someDataThatCanBeDecodedProperly_THEN_itShouldInvokeOnSuccessClosureTheDecodedData() {
+    func test_WHEN_performRequest_GIVEN_noErrorInRequest_someResponseWithValidStatusCode_someDataThatCanBeDecodedProperly_THEN_itShoudReturnTheDecodedData() {
         
         struct ResponseType: Decodable {
             let id: Int
@@ -115,15 +124,19 @@ final class RESTClientTests: XCTestCase {
             return (response, data)
         }
         
-        let successExpectation = XCTestExpectation()
-        let failureExpectation = XCTestExpectation()
-        failureExpectation.isInverted = true
+        let expectation = XCTestExpectation()
         let request = URLRequest(url: URL(string: "www.google.com")!)
-        sut.performRequest(request: request) { (response: ResponseType) in
-            successExpectation.fulfill()
-        } onError: { error in
-            failureExpectation.fulfill()
+        
+        Task.init(priority: .userInitiated) {
+            do {
+                let _ : DummyResponseType = try await sut.performRequest(request: request)
+                // This is the correct path
+            } catch {
+                XCTFail()
+            }
+            expectation.fulfill()
         }
-        wait(for: [successExpectation, failureExpectation], timeout: 0.1)
+        
+        wait(for: [expectation], timeout: 0.1)
     }
 }

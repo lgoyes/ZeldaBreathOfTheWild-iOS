@@ -9,9 +9,9 @@ import XCTest
 @testable import ZeldaBreathOfTheWild
 
 final class APIFoodItemFoodItemMapperTests: XCTestCase {
-    var sut: APIFoodItemFoodItemMapper!
-    var apiItem: APIFoodItem!
-    var actualResult: FoodItem!
+    private var sut: APIFoodItemFoodItemMapper!
+    private var apiItem: APIFoodItem!
+    private var actualResult: FoodItem!
     
     override func setUp() {
         super.setUp()
@@ -48,7 +48,7 @@ extension APIFoodItemFoodItemMapperTests {
         XCTAssertEqual(actualResult.description, APIFoodItemBuilder.Constant.someDescription)
         XCTAssertEqual(actualResult.heartsRecovered, APIFoodItemBuilder.Constant.someHeartsRecovered)
         XCTAssertEqual(actualResult.id, APIFoodItemBuilder.Constant.someId)
-        XCTAssertEqual(actualResult.image, APIFoodItemBuilder.Constant.someImage)
+        XCTAssertEqual(actualResult.image, URL(string: APIFoodItemBuilder.Constant.someImage))
         XCTAssertEqual(actualResult.name, APIFoodItemBuilder.Constant.someName)
     }
 }

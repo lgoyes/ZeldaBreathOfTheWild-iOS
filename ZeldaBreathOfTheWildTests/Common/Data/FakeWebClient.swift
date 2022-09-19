@@ -8,7 +8,7 @@
 import Foundation
 @testable import ZeldaBreathOfTheWild
 
-class FakeWebClient: WebClientProtocol {
+final class FakeWebClient: WebClientProtocol {
     enum AnyError: Error {
         case unexpectedError
     }

@@ -8,6 +8,10 @@
 import SwiftUI
 
 fileprivate struct ItemListViewConstant {
+    struct AlertError {
+        static let title = "Error"
+        static let message = "Something unexpected happened while downloading data"
+    }
     static let searchBarPrompt = "Search..."
 }
 
@@ -42,6 +46,14 @@ struct ItemListView: View {
         .navigationTitle(Text(viewModel.title))
         .onAppear {
             viewModel.processOnAppear()
+        }
+        .onDisappear {
+            viewModel.processOnDisappear()
+        }
+        .alert(isPresented: $viewModel.fetchItemsErrorAlertVisible) {
+            Alert(
+                title: Text(ItemListViewConstant.AlertError.title),
+                message: Text(ItemListViewConstant.AlertError.message))
         }
     }
 }

@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct CategoryListNextViewBuilder {
-    private let titleUseCase: GetCategoryTitleUseCase
+    private let titleUseCase: GetCategoryTitleUseCaseProtocol
     private let fetchCategoryItemsUseCase: FetchCategoryItemsUseCase
     private let nextViewBuilder: ItemListNextViewBuilder
     
-    init(titleUseCase: GetCategoryTitleUseCase) {
+    init(titleUseCase: GetCategoryTitleUseCaseProtocol) {
         let urlSessionConfiguration = URLSessionConfiguration.default
         let urlSession = URLSession(configuration: urlSessionConfiguration)
         let jsonDecoder = JSONDecoder()

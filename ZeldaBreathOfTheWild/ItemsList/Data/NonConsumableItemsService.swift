@@ -18,7 +18,7 @@ class NonConsumableItemsService: BaseCategoryItemsService<APINonConsumableItemsR
     }
     
     override func getValidCategories() -> [Category] {
-        return [.equipment, .treasure, .treasure, .materials, .monsters]
+        return [.equipment, .treasure, .materials, .monsters]
     }
     
     override func map(apiResponse: APINonConsumableItemsResponse) -> CategoryItems {

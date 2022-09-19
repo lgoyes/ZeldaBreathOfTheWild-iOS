@@ -17,13 +17,16 @@ class ItemListViewModel: ObservableObject {
         }
     }
     
+    @Published var fetchItemsErrorAlertVisible = false
+    
     private let fetchCategoryItemsUseCase: FetchCategoryItemsUseCaseProtocol
     private let nextViewBuilder: ItemListNextViewBuilder
     private var category: Category
     private var allItems: [SomeItem]
-    private let getTitleForCategoryUseCase: GetCategoryTitleUseCase
+    private let getTitleForCategoryUseCase: GetCategoryTitleUseCaseProtocol
+    private var fetchItemsAsyncContext: Task<Void, Never>?
     
-    init(category: Category, getTitleForCategoryUseCase: GetCategoryTitleUseCase, nextViewBuilder: ItemListNextViewBuilder, fetchCategoryItemsUseCase: FetchCategoryItemsUseCaseProtocol) {
+    init(category: Category, getTitleForCategoryUseCase: GetCategoryTitleUseCaseProtocol, nextViewBuilder: ItemListNextViewBuilder, fetchCategoryItemsUseCase: FetchCategoryItemsUseCaseProtocol) {
         self.category = category
         self.getTitleForCategoryUseCase = getTitleForCategoryUseCase
         self.fetchCategoryItemsUseCase = fetchCategoryItemsUseCase
@@ -34,25 +37,36 @@ class ItemListViewModel: ObservableObject {
     }
     
     func processOnAppear() {
-        Task.init {
+        fetchItemsAsyncContext = Task.init {
             do {
-                let allItems = try await fetchCategoryItemsUseCase.getItems(for: category)
-                DispatchQueue.main.async { [weak self] in
-                    guard let self = self else { return }
-                    self.processCategoryItems(allItems)
-                }
+                try await performFetchItemsRequest()
             } catch {
-                print(error.localizedDescription)
+                await processCategoryItemFetchingError(error)
             }
         }
     }
     
-    private func processCategoryItems(_ categoryItems: CategoryItems) {
+    func processOnDisappear() {
+        fetchItemsAsyncContext?.cancel()
+        fetchItemsAsyncContext = nil
+    }
+    
+    func performFetchItemsRequest() async throws {
+        let allItems = try await fetchCategoryItemsUseCase.getItems(for: category)
+        await processCategoryItems(allItems)
+    }
+    
+    @MainActor private func processCategoryItems(_ categoryItems: CategoryItems) async {
         var items = [SomeItem]()
         items.append(contentsOf: categoryItems.food)
         items.append(contentsOf: categoryItems.nonFood)
         self.allItems = items
         updateFilteredItems()
+    }
+    
+    @MainActor func processCategoryItemFetchingError(_ error: Error) {
+        print(error.localizedDescription)
+        fetchItemsErrorAlertVisible = true
     }
     
     private func updateFilteredItems() {

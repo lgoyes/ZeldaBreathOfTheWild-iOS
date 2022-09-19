@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7911350E28D7BF6E003D142A /* FakeNetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7911350D28D7BF6E003D142A /* FakeNetworkRouter.swift */; };
+		7911351128D7C9CA003D142A /* FatalErrorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7911351028D7C9CA003D142A /* FatalErrorUtil.swift */; };
+		7911351328D7C9FD003D142A /* CommonConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7911351228D7C9FD003D142A /* CommonConstant.swift */; };
+		7911351628D7CA89003D142A /* XCTestCase+FatalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7911351528D7CA89003D142A /* XCTestCase+FatalError.swift */; };
+		7911351928D7CCE9003D142A /* FetchCategoryItemsUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7911351828D7CCE9003D142A /* FetchCategoryItemsUseCaseTests.swift */; };
+		7911351B28D7CE65003D142A /* FakeCategoryItemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7911351A28D7CE65003D142A /* FakeCategoryItemService.swift */; };
+		7911351D28D7D1A3003D142A /* NonConsumableItemsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7911351C28D7D1A3003D142A /* NonConsumableItemsServiceTests.swift */; };
 		7915FB0628D3BF80009CBE0B /* ItemDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7915FB0528D3BF80009CBE0B /* ItemDetailsView.swift */; };
 		7915FB0928D3C0AE009CBE0B /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7915FB0828D3C0AE009CBE0B /* ItemListView.swift */; };
 		7915FB0B28D3C10F009CBE0B /* CategoryListViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7915FB0A28D3C10F009CBE0B /* CategoryListViewBuilder.swift */; };
@@ -31,10 +38,10 @@
 		797CB30F28D16B190055D398 /* APICategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB30E28D16B190055D398 /* APICategory.swift */; };
 		797CB31128D16B280055D398 /* APIConsumableItemsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB31028D16B280055D398 /* APIConsumableItemsResponse.swift */; };
 		797CB31328D16C4A0055D398 /* DataConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB31228D16C4A0055D398 /* DataConstants.swift */; };
-		797CB31728D16CD20055D398 /* CategoryItemsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB31628D16CD20055D398 /* CategoryItemsServiceTests.swift */; };
+		797CB31728D16CD20055D398 /* ConsumableItemsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB31628D16CD20055D398 /* ConsumableItemsServiceTests.swift */; };
 		797E0A9928D3AE4300F9EE1F /* APIFoodItemBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797E0A9828D3AE4300F9EE1F /* APIFoodItemBuilder.swift */; };
 		797E0A9B28D3AEB300F9EE1F /* APINonFoodItemBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797E0A9A28D3AEB300F9EE1F /* APINonFoodItemBuilder.swift */; };
-		797E0A9D28D3AF5F00F9EE1F /* DefaultAPICategoryItemsResponseCategoryItemsMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797E0A9C28D3AF5F00F9EE1F /* DefaultAPICategoryItemsResponseCategoryItemsMapperTests.swift */; };
+		797E0A9D28D3AF5F00F9EE1F /* APIConsumableItemsResponseCategoryItemsMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797E0A9C28D3AF5F00F9EE1F /* APIConsumableItemsResponseCategoryItemsMapperTests.swift */; };
 		797E0AA028D3B8FE00F9EE1F /* CategoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797E0A9F28D3B8FE00F9EE1F /* CategoryListView.swift */; };
 		79B347C228D55EA600AAB300 /* ItemListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B347C128D55EA600AAB300 /* ItemListViewModel.swift */; };
 		79B8D9FE28D6927A00A12A70 /* ItemListNextViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B8D9FD28D6927A00A12A70 /* ItemListNextViewBuilder.swift */; };
@@ -58,6 +65,15 @@
 		79CDF66A28D67CC6002DCD45 /* ItemDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CDF66928D67CC6002DCD45 /* ItemDetailsViewModel.swift */; };
 		79CDF66C28D6822E002DCD45 /* CategoryListNextViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CDF66B28D6822E002DCD45 /* CategoryListNextViewBuilder.swift */; };
 		79CDF67028D68382002DCD45 /* CategoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CDF66F28D68382002DCD45 /* CategoryListViewModel.swift */; };
+		79D435BD28D7F6FF00FA6DF4 /* NetworkRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D435BC28D7F6FF00FA6DF4 /* NetworkRouterTests.swift */; };
+		79F70F5428D7D78E0096C450 /* ItemListNextViewBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F70F5328D7D78E0096C450 /* ItemListNextViewBuilderTests.swift */; };
+		79F70F5628D7D8A90096C450 /* FakeGetCategoryTitleUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F70F5528D7D8A90096C450 /* FakeGetCategoryTitleUseCase.swift */; };
+		79F70F5828D7DA8A0096C450 /* DefaultAPINonConsumableItemsResponseCategoryItemsMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F70F5728D7DA8A0096C450 /* DefaultAPINonConsumableItemsResponseCategoryItemsMapperTests.swift */; };
+		79F70F5A28D7DB9A0096C450 /* BaseCategoryItemsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F70F5928D7DB9A0096C450 /* BaseCategoryItemsServiceTests.swift */; };
+		79F70F5E28D7DCEB0096C450 /* ItemDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F70F5D28D7DCEB0096C450 /* ItemDetailsViewModelTests.swift */; };
+		79F70F6028D7DEEA0096C450 /* ItemListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F70F5F28D7DEEA0096C450 /* ItemListViewModelTests.swift */; };
+		79F70F6228D7DFF50096C450 /* FakeFetchCategoryItemsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F70F6128D7DFF50096C450 /* FakeFetchCategoryItemsUseCase.swift */; };
+		79F70F6428D7E2190096C450 /* TestingItemListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F70F6328D7E2190096C450 /* TestingItemListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +94,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7911350D28D7BF6E003D142A /* FakeNetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeNetworkRouter.swift; sourceTree = "<group>"; };
+		7911351028D7C9CA003D142A /* FatalErrorUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FatalErrorUtil.swift; sourceTree = "<group>"; };
+		7911351228D7C9FD003D142A /* CommonConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonConstant.swift; sourceTree = "<group>"; };
+		7911351528D7CA89003D142A /* XCTestCase+FatalError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FatalError.swift"; sourceTree = "<group>"; };
+		7911351828D7CCE9003D142A /* FetchCategoryItemsUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCategoryItemsUseCaseTests.swift; sourceTree = "<group>"; };
+		7911351A28D7CE65003D142A /* FakeCategoryItemService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeCategoryItemService.swift; sourceTree = "<group>"; };
+		7911351C28D7D1A3003D142A /* NonConsumableItemsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonConsumableItemsServiceTests.swift; sourceTree = "<group>"; };
 		7915FB0528D3BF80009CBE0B /* ItemDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsView.swift; sourceTree = "<group>"; };
 		7915FB0828D3C0AE009CBE0B /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
 		7915FB0A28D3C10F009CBE0B /* CategoryListViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewBuilder.swift; sourceTree = "<group>"; };
@@ -105,10 +128,10 @@
 		797CB30E28D16B190055D398 /* APICategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICategory.swift; sourceTree = "<group>"; };
 		797CB31028D16B280055D398 /* APIConsumableItemsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConsumableItemsResponse.swift; sourceTree = "<group>"; };
 		797CB31228D16C4A0055D398 /* DataConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataConstants.swift; sourceTree = "<group>"; };
-		797CB31628D16CD20055D398 /* CategoryItemsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemsServiceTests.swift; sourceTree = "<group>"; };
+		797CB31628D16CD20055D398 /* ConsumableItemsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumableItemsServiceTests.swift; sourceTree = "<group>"; };
 		797E0A9828D3AE4300F9EE1F /* APIFoodItemBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFoodItemBuilder.swift; sourceTree = "<group>"; };
 		797E0A9A28D3AEB300F9EE1F /* APINonFoodItemBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APINonFoodItemBuilder.swift; sourceTree = "<group>"; };
-		797E0A9C28D3AF5F00F9EE1F /* DefaultAPICategoryItemsResponseCategoryItemsMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAPICategoryItemsResponseCategoryItemsMapperTests.swift; sourceTree = "<group>"; };
+		797E0A9C28D3AF5F00F9EE1F /* APIConsumableItemsResponseCategoryItemsMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConsumableItemsResponseCategoryItemsMapperTests.swift; sourceTree = "<group>"; };
 		797E0A9F28D3B8FE00F9EE1F /* CategoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListView.swift; sourceTree = "<group>"; };
 		79B347C128D55EA600AAB300 /* ItemListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewModel.swift; sourceTree = "<group>"; };
 		79B8D9FD28D6927A00A12A70 /* ItemListNextViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListNextViewBuilder.swift; sourceTree = "<group>"; };
@@ -132,6 +155,15 @@
 		79CDF66928D67CC6002DCD45 /* ItemDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsViewModel.swift; sourceTree = "<group>"; };
 		79CDF66B28D6822E002DCD45 /* CategoryListNextViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListNextViewBuilder.swift; sourceTree = "<group>"; };
 		79CDF66F28D68382002DCD45 /* CategoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewModel.swift; sourceTree = "<group>"; };
+		79D435BC28D7F6FF00FA6DF4 /* NetworkRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouterTests.swift; sourceTree = "<group>"; };
+		79F70F5328D7D78E0096C450 /* ItemListNextViewBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListNextViewBuilderTests.swift; sourceTree = "<group>"; };
+		79F70F5528D7D8A90096C450 /* FakeGetCategoryTitleUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeGetCategoryTitleUseCase.swift; sourceTree = "<group>"; };
+		79F70F5728D7DA8A0096C450 /* DefaultAPINonConsumableItemsResponseCategoryItemsMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAPINonConsumableItemsResponseCategoryItemsMapperTests.swift; sourceTree = "<group>"; };
+		79F70F5928D7DB9A0096C450 /* BaseCategoryItemsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCategoryItemsServiceTests.swift; sourceTree = "<group>"; };
+		79F70F5D28D7DCEB0096C450 /* ItemDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsViewModelTests.swift; sourceTree = "<group>"; };
+		79F70F5F28D7DEEA0096C450 /* ItemListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewModelTests.swift; sourceTree = "<group>"; };
+		79F70F6128D7DFF50096C450 /* FakeFetchCategoryItemsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeFetchCategoryItemsUseCase.swift; sourceTree = "<group>"; };
+		79F70F6328D7E2190096C450 /* TestingItemListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingItemListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +191,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7911350F28D7C9C1003D142A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				7911351028D7C9CA003D142A /* FatalErrorUtil.swift */,
+				7911351228D7C9FD003D142A /* CommonConstant.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		7911351428D7CA7D003D142A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				7911351528D7CA89003D142A /* XCTestCase+FatalError.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		7911351728D7CCDC003D142A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				7911351828D7CCE9003D142A /* FetchCategoryItemsUseCaseTests.swift */,
+				79F70F6128D7DFF50096C450 /* FakeFetchCategoryItemsUseCase.swift */,
+				7911351A28D7CE65003D142A /* FakeCategoryItemService.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
 		7915FB0428D3BF72009CBE0B /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,7 +292,9 @@
 		797CB2D428D154E80055D398 /* ZeldaBreathOfTheWildTests */ = {
 			isa = PBXGroup;
 			children = (
-				797CB31428D16CBC0055D398 /* CategoryItems */,
+				7911351428D7CA7D003D142A /* Util */,
+				79F70F5B28D7DCC90096C450 /* ItemDetails */,
+				797CB31428D16CBC0055D398 /* ItemsList */,
 				797CB2FF28D15F530055D398 /* Common */,
 			);
 			path = ZeldaBreathOfTheWildTests;
@@ -258,6 +319,7 @@
 		797CB2F928D15A9E0055D398 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				7911350F28D7C9C1003D142A /* Util */,
 				79CDF67128D684B8002DCD45 /* Domain */,
 				7915FB0C28D3C135009CBE0B /* Presentation */,
 				797CB2FA28D15AA30055D398 /* Data */,
@@ -345,24 +407,31 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
-		797CB31428D16CBC0055D398 /* CategoryItems */ = {
+		797CB31428D16CBC0055D398 /* ItemsList */ = {
 			isa = PBXGroup;
 			children = (
+				79F70F5228D7D77F0096C450 /* Presentation */,
+				7911351728D7CCDC003D142A /* Domain */,
 				797CB31528D16CC10055D398 /* Data */,
 			);
-			path = CategoryItems;
+			path = ItemsList;
 			sourceTree = "<group>";
 		};
 		797CB31528D16CC10055D398 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				797CB31628D16CD20055D398 /* CategoryItemsServiceTests.swift */,
+				7911350D28D7BF6E003D142A /* FakeNetworkRouter.swift */,
+				79F70F5928D7DB9A0096C450 /* BaseCategoryItemsServiceTests.swift */,
+				797CB31628D16CD20055D398 /* ConsumableItemsServiceTests.swift */,
+				7911351C28D7D1A3003D142A /* NonConsumableItemsServiceTests.swift */,
 				791BBEDE28D26C8200B3B7D5 /* APIFoodItemFoodItemMapperTests.swift */,
 				791BBEE028D26EC200B3B7D5 /* APINonFoodItemNonFoodItemMapperTests.swift */,
 				791BBEE228D2701F00B3B7D5 /* CategoryAPICategoryMapperTests.swift */,
 				797E0A9828D3AE4300F9EE1F /* APIFoodItemBuilder.swift */,
 				797E0A9A28D3AEB300F9EE1F /* APINonFoodItemBuilder.swift */,
-				797E0A9C28D3AF5F00F9EE1F /* DefaultAPICategoryItemsResponseCategoryItemsMapperTests.swift */,
+				797E0A9C28D3AF5F00F9EE1F /* APIConsumableItemsResponseCategoryItemsMapperTests.swift */,
+				79F70F5728D7DA8A0096C450 /* DefaultAPINonConsumableItemsResponseCategoryItemsMapperTests.swift */,
+				79D435BC28D7F6FF00FA6DF4 /* NetworkRouterTests.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -409,6 +478,33 @@
 				7927C42328D57ED600ED3044 /* GetCategoryTitleUseCase.swift */,
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		79F70F5228D7D77F0096C450 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				79F70F5328D7D78E0096C450 /* ItemListNextViewBuilderTests.swift */,
+				79F70F5528D7D8A90096C450 /* FakeGetCategoryTitleUseCase.swift */,
+				79F70F5F28D7DEEA0096C450 /* ItemListViewModelTests.swift */,
+				79F70F6328D7E2190096C450 /* TestingItemListViewModel.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		79F70F5B28D7DCC90096C450 /* ItemDetails */ = {
+			isa = PBXGroup;
+			children = (
+				79F70F5C28D7DCDB0096C450 /* Presentation */,
+			);
+			path = ItemDetails;
+			sourceTree = "<group>";
+		};
+		79F70F5C28D7DCDB0096C450 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				79F70F5D28D7DCEB0096C450 /* ItemDetailsViewModelTests.swift */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -544,6 +640,7 @@
 				7927C42228D57E6000ED3044 /* CategoryTitleRepository.swift in Sources */,
 				79B347C228D55EA600AAB300 /* ItemListViewModel.swift in Sources */,
 				79B8D9FE28D6927A00A12A70 /* ItemListNextViewBuilder.swift in Sources */,
+				7911351128D7C9CA003D142A /* FatalErrorUtil.swift in Sources */,
 				79B8DA0828D6ADB600A12A70 /* BaseCategoryItemsService.swift in Sources */,
 				797CB2FE28D15B530055D398 /* RESTClient.swift in Sources */,
 				797CB30528D165DE0055D398 /* Endpoint.swift in Sources */,
@@ -554,6 +651,7 @@
 				7915FB0928D3C0AE009CBE0B /* ItemListView.swift in Sources */,
 				797CB30F28D16B190055D398 /* APICategory.swift in Sources */,
 				7915FB0B28D3C10F009CBE0B /* CategoryListViewBuilder.swift in Sources */,
+				7911351328D7C9FD003D142A /* CommonConstant.swift in Sources */,
 				797E0AA028D3B8FE00F9EE1F /* CategoryListView.swift in Sources */,
 				79CBD93428D2643D001E4D92 /* MapperError.swift in Sources */,
 				7915FB0628D3BF80009CBE0B /* ItemDetailsView.swift in Sources */,
@@ -586,16 +684,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				797CB30328D15FA30055D398 /* RESTClientTests.swift in Sources */,
-				797CB31728D16CD20055D398 /* CategoryItemsServiceTests.swift in Sources */,
-				797E0A9D28D3AF5F00F9EE1F /* DefaultAPICategoryItemsResponseCategoryItemsMapperTests.swift in Sources */,
+				797CB31728D16CD20055D398 /* ConsumableItemsServiceTests.swift in Sources */,
+				797E0A9D28D3AF5F00F9EE1F /* APIConsumableItemsResponseCategoryItemsMapperTests.swift in Sources */,
 				791BBEDF28D26C8200B3B7D5 /* APIFoodItemFoodItemMapperTests.swift in Sources */,
+				7911351B28D7CE65003D142A /* FakeCategoryItemService.swift in Sources */,
+				79F70F5A28D7DB9A0096C450 /* BaseCategoryItemsServiceTests.swift in Sources */,
+				79F70F6228D7DFF50096C450 /* FakeFetchCategoryItemsUseCase.swift in Sources */,
+				7911350E28D7BF6E003D142A /* FakeNetworkRouter.swift in Sources */,
 				791BBEE328D2701F00B3B7D5 /* CategoryAPICategoryMapperTests.swift in Sources */,
 				791BBEE128D26EC200B3B7D5 /* APINonFoodItemNonFoodItemMapperTests.swift in Sources */,
 				797E0A9B28D3AEB300F9EE1F /* APINonFoodItemBuilder.swift in Sources */,
+				79F70F5428D7D78E0096C450 /* ItemListNextViewBuilderTests.swift in Sources */,
+				7911351D28D7D1A3003D142A /* NonConsumableItemsServiceTests.swift in Sources */,
 				79CBD92B28D25DE9001E4D92 /* FakeWebClient.swift in Sources */,
+				79F70F6428D7E2190096C450 /* TestingItemListViewModel.swift in Sources */,
+				7911351928D7CCE9003D142A /* FetchCategoryItemsUseCaseTests.swift in Sources */,
 				79CBD93828D26899001E4D92 /* EndpointTests.swift in Sources */,
+				79F70F5628D7D8A90096C450 /* FakeGetCategoryTitleUseCase.swift in Sources */,
+				79F70F5E28D7DCEB0096C450 /* ItemDetailsViewModelTests.swift in Sources */,
+				79D435BD28D7F6FF00FA6DF4 /* NetworkRouterTests.swift in Sources */,
+				79F70F6028D7DEEA0096C450 /* ItemListViewModelTests.swift in Sources */,
 				797CB2F828D159060055D398 /* MockURLProtocol.swift in Sources */,
 				797E0A9928D3AE4300F9EE1F /* APIFoodItemBuilder.swift in Sources */,
+				79F70F5828D7DA8A0096C450 /* DefaultAPINonConsumableItemsResponseCategoryItemsMapperTests.swift in Sources */,
+				7911351628D7CA89003D142A /* XCTestCase+FatalError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  DefaultAPICategoryItemsResponseCategoryItemsMapperTests.swift
+//  APIConsumableItemsResponseCategoryItemsMapperTests.swift
 //  ZeldaBreathOfTheWildTests
 //
 //  Created by Luis David Goyes on 15/09/22.
@@ -8,9 +8,9 @@
 import XCTest
 @testable import ZeldaBreathOfTheWild
 
-final class DefaultAPICategoryItemsResponseCategoryItemsMapperTests: XCTestCase {
+final class APIConsumableItemsResponseCategoryItemsMapperTests: XCTestCase {
 
-    var sut: DefaultAPIConsumableItemsResponseCategoryItemsMapper!
+    private var sut: DefaultAPIConsumableItemsResponseCategoryItemsMapper!
     
     override func setUp() {
         super.setUp()
@@ -24,11 +24,7 @@ final class DefaultAPICategoryItemsResponseCategoryItemsMapperTests: XCTestCase 
     
     // MARK: - map
     func test_WHEN_map_GIVEN_someAPICategoryItemsResponse_THEN_itShouldReturnACategoryItemsObject() {
-        let apiResponse = APIConsumableItemsResponse(food: [
-            APIFoodItemBuilder.build()
-        ], nonFood: [
-            APINonFoodItemBuilder.build()
-        ])
+        let apiResponse = APIConsumableItemsResponse(data: APIConsumableItemsResponseData(food: [APIFoodItemBuilder.build()], nonFood: [APINonFoodItemBuilder.build()]))
         
         let result = sut.map(input: apiResponse)
         
