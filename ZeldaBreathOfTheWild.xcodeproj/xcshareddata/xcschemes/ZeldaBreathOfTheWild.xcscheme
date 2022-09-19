@@ -50,6 +50,16 @@
                ReferencedContainer = "container:ZeldaBreathOfTheWild.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "797CB2DA28D154E80055D398"
+               BuildableName = "ZeldaBreathOfTheWildUITests.xctest"
+               BlueprintName = "ZeldaBreathOfTheWildUITests"
+               ReferencedContainer = "container:ZeldaBreathOfTheWild.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

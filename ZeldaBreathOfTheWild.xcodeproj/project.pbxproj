@@ -21,13 +21,15 @@
 		791BBEDF28D26C8200B3B7D5 /* APIFoodItemFoodItemMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791BBEDE28D26C8200B3B7D5 /* APIFoodItemFoodItemMapperTests.swift */; };
 		791BBEE128D26EC200B3B7D5 /* APINonFoodItemNonFoodItemMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791BBEE028D26EC200B3B7D5 /* APINonFoodItemNonFoodItemMapperTests.swift */; };
 		791BBEE328D2701F00B3B7D5 /* CategoryAPICategoryMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791BBEE228D2701F00B3B7D5 /* CategoryAPICategoryMapperTests.swift */; };
+		7922506928D7F8C8003D45A1 /* StartUpSmokeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7922506828D7F8C8003D45A1 /* StartUpSmokeTests.swift */; };
+		7922506B28D7FAE5003D45A1 /* ItemListSmokeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7922506A28D7FAE5003D45A1 /* ItemListSmokeTest.swift */; };
+		7922506D28D7FDD2003D45A1 /* ItemDetailsSmokeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7922506C28D7FDD2003D45A1 /* ItemDetailsSmokeTests.swift */; };
 		7927C42028D5709D00ED3044 /* Color+hexaInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7927C41F28D5709D00ED3044 /* Color+hexaInit.swift */; };
 		7927C42228D57E6000ED3044 /* CategoryTitleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7927C42128D57E6000ED3044 /* CategoryTitleRepository.swift */; };
 		7927C42428D57ED600ED3044 /* GetCategoryTitleUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7927C42328D57ED600ED3044 /* GetCategoryTitleUseCase.swift */; };
 		797CB2C528D154E60055D398 /* ZeldaBreathOfTheWildApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB2C428D154E60055D398 /* ZeldaBreathOfTheWildApp.swift */; };
 		797CB2C928D154E80055D398 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 797CB2C828D154E80055D398 /* Assets.xcassets */; };
 		797CB2CC28D154E80055D398 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 797CB2CB28D154E80055D398 /* Preview Assets.xcassets */; };
-		797CB2E028D154E80055D398 /* ZeldaBreathOfTheWildUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB2DF28D154E80055D398 /* ZeldaBreathOfTheWildUITests.swift */; };
 		797CB2F828D159060055D398 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB2F728D159060055D398 /* MockURLProtocol.swift */; };
 		797CB2FC28D15B040055D398 /* WebClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB2FB28D15B040055D398 /* WebClientProtocol.swift */; };
 		797CB2FE28D15B530055D398 /* RESTClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CB2FD28D15B530055D398 /* RESTClient.swift */; };
@@ -108,6 +110,9 @@
 		791BBEDE28D26C8200B3B7D5 /* APIFoodItemFoodItemMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFoodItemFoodItemMapperTests.swift; sourceTree = "<group>"; };
 		791BBEE028D26EC200B3B7D5 /* APINonFoodItemNonFoodItemMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APINonFoodItemNonFoodItemMapperTests.swift; sourceTree = "<group>"; };
 		791BBEE228D2701F00B3B7D5 /* CategoryAPICategoryMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryAPICategoryMapperTests.swift; sourceTree = "<group>"; };
+		7922506828D7F8C8003D45A1 /* StartUpSmokeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpSmokeTests.swift; sourceTree = "<group>"; };
+		7922506A28D7FAE5003D45A1 /* ItemListSmokeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListSmokeTest.swift; sourceTree = "<group>"; };
+		7922506C28D7FDD2003D45A1 /* ItemDetailsSmokeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsSmokeTests.swift; sourceTree = "<group>"; };
 		7927C41F28D5709D00ED3044 /* Color+hexaInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+hexaInit.swift"; sourceTree = "<group>"; };
 		7927C42128D57E6000ED3044 /* CategoryTitleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTitleRepository.swift; sourceTree = "<group>"; };
 		7927C42328D57ED600ED3044 /* GetCategoryTitleUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCategoryTitleUseCase.swift; sourceTree = "<group>"; };
@@ -117,7 +122,6 @@
 		797CB2CB28D154E80055D398 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		797CB2D128D154E80055D398 /* ZeldaBreathOfTheWildTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeldaBreathOfTheWildTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		797CB2DB28D154E80055D398 /* ZeldaBreathOfTheWildUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeldaBreathOfTheWildUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		797CB2DF28D154E80055D398 /* ZeldaBreathOfTheWildUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeldaBreathOfTheWildUITests.swift; sourceTree = "<group>"; };
 		797CB2F728D159060055D398 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 		797CB2FB28D15B040055D398 /* WebClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebClientProtocol.swift; sourceTree = "<group>"; };
 		797CB2FD28D15B530055D398 /* RESTClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RESTClient.swift; sourceTree = "<group>"; };
@@ -303,7 +307,9 @@
 		797CB2DE28D154E80055D398 /* ZeldaBreathOfTheWildUITests */ = {
 			isa = PBXGroup;
 			children = (
-				797CB2DF28D154E80055D398 /* ZeldaBreathOfTheWildUITests.swift */,
+				7922506828D7F8C8003D45A1 /* StartUpSmokeTests.swift */,
+				7922506A28D7FAE5003D45A1 /* ItemListSmokeTest.swift */,
+				7922506C28D7FDD2003D45A1 /* ItemDetailsSmokeTests.swift */,
 			);
 			path = ZeldaBreathOfTheWildUITests;
 			sourceTree = "<group>";
@@ -715,7 +721,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				797CB2E028D154E80055D398 /* ZeldaBreathOfTheWildUITests.swift in Sources */,
+				7922506D28D7FDD2003D45A1 /* ItemDetailsSmokeTests.swift in Sources */,
+				7922506B28D7FAE5003D45A1 /* ItemListSmokeTest.swift in Sources */,
+				7922506928D7F8C8003D45A1 /* StartUpSmokeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
